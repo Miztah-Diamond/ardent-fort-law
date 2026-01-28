@@ -1,4 +1,4 @@
-// ===== ARDENT FORT LAW - GOTHIC LUXURY JAVASCRIPT =====
+// ===== Ardent Fort Law - Interactive Features =====
 
 // Navbar scroll effect
 const navbar = document.querySelector('.navbar');
@@ -84,20 +84,122 @@ document.querySelectorAll('.diff-item').forEach((item, index) => {
     observer.observe(item);
 });
 
+// Contact Form Handling
+const contactForm = document.querySelector('.contact-form');
+
+if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Get form data
+        const formData = new FormData(contactForm);
+        const data = Object.fromEntries(formData);
+        
+        // Here you would typically send the data to your backend
+        // For now, we'll just show a success message
+        alert('Thank you for your inquiry. We will respond within 24 hours.');
+        
+        // Reset form
+        contactForm.reset();
+        
+        // In production, you would do something like:
+        // fetch('/api/contact', {
+        //     method: 'POST',
+        //     headers: { 'Content-Type': 'application/json' },
+        //     body: JSON.stringify(data)
+        // })
+        // .then(response => response.json())
+        // .then(data => {
+        //     alert('Thank you! We will respond within 24 hours.');
+        //     contactForm.reset();
+        // })
+        // .catch(error => {
+        //     alert('There was an error. Please try again or email us directly.');
+        // });
+    });
+}
+
+// Add hover effects to client types
+document.querySelectorAll('.client-type').forEach(client => {
+    client.addEventListener('mouseenter', function() {
+        this.style.borderColor = 'var(--accent-gold)';
+    });
+    
+    client.addEventListener('mouseleave', function() {
+        this.style.borderColor = 'rgba(212, 175, 55, 0.2)';
+    });
+});
+
+// Parallax effect for hero section (subtle)
+window.addEventListener('scroll', () => {
+    const scrolled = window.pageYOffset;
+    const hero = document.querySelector('.hero');
+    
+    if (hero && scrolled < window.innerHeight) {
+        hero.style.backgroundPositionY = scrolled * 0.5 + 'px';
+    }
+});
+
+// Add animation to scroll indicator
+const scrollIndicator = document.querySelector('.scroll-indicator');
+if (scrollIndicator) {
+    scrollIndicator.addEventListener('click', () => {
+        window.scrollTo({
+            top: window.innerHeight,
+            behavior: 'smooth'
+        });
+    });
+}
+
+// Counter animation for stats (if visible)
+const animateCounter = (element, target) => {
+    let current = 0;
+    const increment = target / 100;
+    const timer = setInterval(() => {
+        current += increment;
+        if (current >= target) {
+            element.textContent = target;
+            clearInterval(timer);
+        } else {
+            element.textContent = Math.floor(current);
+        }
+    }, 20);
+};
+
+// Observe stats for counter animation
+const statObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const statElement = entry.target.querySelector('h4');
+            const targetValue = parseInt(statElement.textContent.replace(/\D/g, ''));
+            
+            if (targetValue && !isNaN(targetValue)) {
+                animateCounter(statElement, targetValue);
+            }
+            
+            statObserver.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.5 });
+
+document.querySelectorAll('.stat-item').forEach(stat => {
+    statObserver.observe(stat);
+});
+
 // Form validation enhancement
 const inputs = document.querySelectorAll('.contact-form input, .contact-form textarea, .contact-form select');
 
 inputs.forEach(input => {
     input.addEventListener('blur', function() {
         if (this.value.trim() === '' && this.hasAttribute('required')) {
-            this.style.borderColor = '#ff4444';
+            this.style.borderColor = '#dc3545';
         } else {
-            this.style.borderColor = 'rgba(212, 175, 55, 0.3)';
+            this.style.borderColor = 'var(--light-gray)';
         }
     });
     
     input.addEventListener('focus', function() {
-        this.style.borderColor = 'var(--gold)';
+        this.style.borderColor = 'var(--accent-gold)';
     });
 });
 
@@ -107,9 +209,9 @@ if (emailInput) {
     emailInput.addEventListener('blur', function() {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(this.value)) {
-            this.style.borderColor = '#ff4444';
+            this.style.borderColor = '#dc3545';
         } else {
-            this.style.borderColor = 'rgba(212, 175, 55, 0.3)';
+            this.style.borderColor = 'var(--light-gray)';
         }
     });
 }
@@ -132,7 +234,7 @@ window.addEventListener('scroll', () => {
     navLinks.forEach(link => {
         link.style.color = 'var(--white)';
         if (link.getAttribute('href') === `#${current}`) {
-            link.style.color = 'var(--gold)';
+            link.style.color = 'var(--accent-gold)';
         }
     });
 });
@@ -146,26 +248,4 @@ window.addEventListener('load', () => {
     }, 100);
 });
 
-// Gold glow effect on hover for service cards
-document.querySelectorAll('.service-card').forEach(card => {
-    card.addEventListener('mouseenter', function() {
-        this.style.boxShadow = '0 0 30px rgba(212, 175, 55, 0.5)';
-    });
-    
-    card.addEventListener('mouseleave', function() {
-        this.style.boxShadow = '0 10px 40px rgba(212, 175, 55, 0.3)';
-    });
-});
-
-// Add gold glow to buttons on hover
-document.querySelectorAll('.btn-primary').forEach(btn => {
-    btn.addEventListener('mouseenter', function() {
-        this.style.boxShadow = '0 0 20px rgba(212, 175, 55, 0.6)';
-    });
-    
-    btn.addEventListener('mouseleave', function() {
-        this.style.boxShadow = 'none';
-    });
-});
-
-console.log('Ardent Fort Law - Gothic Luxury website loaded successfully');
+console.log('Ardent Fort Law website loaded successfully');
