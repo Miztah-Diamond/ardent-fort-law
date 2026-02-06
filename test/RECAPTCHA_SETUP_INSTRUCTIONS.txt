@@ -1,0 +1,187 @@
+═══════════════════════════════════════════════════════════════════
+  ARDENT FORT LAW - GOOGLE reCAPTCHA v3 SETUP INSTRUCTIONS
+═══════════════════════════════════════════════════════════════════
+
+🔐 SECURITY FEATURES IMPLEMENTED:
+✅ Google reCAPTCHA v3 (Invisible bot protection)
+✅ Honeypot field (catches basic bots)
+✅ Time-based submission check (prevents instant submissions)
+✅ Multiple submission prevention
+✅ Form email updated to: info@ardentfortlaw.com
+
+═══════════════════════════════════════════════════════════════════
+  STEP 1: GET YOUR reCAPTCHA KEYS
+═══════════════════════════════════════════════════════════════════
+
+1. Go to: https://www.google.com/recaptcha/admin/create
+
+2. Sign in with your Google account
+
+3. Fill in the registration form:
+   
+   Label: Ardent Fort Law
+   
+   reCAPTCHA type: ✅ reCAPTCHA v3
+   
+   Domains (add both):
+   • ardentfortlaw.com
+   • www.ardentfortlaw.com
+   
+   ✅ Accept the reCAPTCHA Terms of Service
+   
+4. Click "Submit"
+
+5. You'll receive TWO keys:
+   
+   📌 SITE KEY (Public) - Example: 6LcXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+   📌 SECRET KEY (Private) - Keep this secret!
+
+═══════════════════════════════════════════════════════════════════
+  STEP 2: ADD YOUR SITE KEY TO THE FILES
+═══════════════════════════════════════════════════════════════════
+
+You need to replace "YOUR_SITE_KEY_HERE" in TWO places:
+
+FILE 1: index.html
+-------
+Find this line (around line 10):
+<script src="https://www.google.com/recaptcha/api.js?render=YOUR_SITE_KEY_HERE"></script>
+
+Replace with:
+<script src="https://www.google.com/recaptcha/api.js?render=YOUR_ACTUAL_SITE_KEY"></script>
+
+
+FILE 2: script.js
+-------
+Find this line (near the end of the file):
+grecaptcha.execute('YOUR_SITE_KEY_HERE', {action: 'submit'}).then(function(token) {
+
+Replace with:
+grecaptcha.execute('YOUR_ACTUAL_SITE_KEY', {action: 'submit'}).then(function(token) {
+
+═══════════════════════════════════════════════════════════════════
+  STEP 3: CONFIGURE FORMSUBMIT (FIRST TIME ONLY)
+═══════════════════════════════════════════════════════════════════
+
+FormSubmit requires email verification on first use:
+
+1. Deploy your website with the updated files
+2. Go to www.ardentfortlaw.com
+3. Fill out and submit the contact form
+4. Check info@ardentfortlaw.com inbox
+5. Click the activation link from FormSubmit
+6. Done! Form is now live and secured
+
+═══════════════════════════════════════════════════════════════════
+  HOW IT WORKS (FOR YOUR USERS)
+═══════════════════════════════════════════════════════════════════
+
+✅ INVISIBLE PROTECTION - Users see no CAPTCHA
+✅ When they click "Submit Inquiry":
+   • reCAPTCHA analyzes their behavior (0-1 second)
+   • If legitimate user → form submits normally
+   • If bot detected → submission blocked automatically
+✅ Email arrives at: info@ardentfortlaw.com
+
+═══════════════════════════════════════════════════════════════════
+  TESTING YOUR FORM
+═══════════════════════════════════════════════════════════════════
+
+After deployment:
+
+1. Open www.ardentfortlaw.com in browser
+2. Scroll to Contact section
+3. Fill out the form
+4. Click "Submit Inquiry"
+5. You should see "Verifying..." briefly
+6. Form should submit successfully
+7. Check info@ardentfortlaw.com for the email
+
+═══════════════════════════════════════════════════════════════════
+  reCAPTCHA DASHBOARD (MONITOR TRAFFIC)
+═══════════════════════════════════════════════════════════════════
+
+View statistics: https://www.google.com/recaptcha/admin
+
+You'll see:
+• Total requests
+• Bot detection rate
+• Score distribution (0.0 = bot, 1.0 = human)
+• Suspicious activity
+
+═══════════════════════════════════════════════════════════════════
+  TROUBLESHOOTING
+═══════════════════════════════════════════════════════════════════
+
+❌ Form not submitting?
+→ Check browser console (F12) for errors
+→ Verify Site Key is correct in BOTH files
+→ Ensure domains match exactly in reCAPTCHA admin
+
+❌ "Invalid site key" error?
+→ Double-check you copied the SITE KEY (not Secret Key)
+→ Verify domain is registered in reCAPTCHA admin
+
+❌ Not receiving emails?
+→ Check spam folder
+→ Verify FormSubmit activation (first-time setup)
+→ Test with different email address
+
+❌ reCAPTCHA badge not showing?
+→ This is normal - it appears on form interaction
+→ Badge in bottom-right corner
+
+═══════════════════════════════════════════════════════════════════
+  SECURITY LEVELS
+═══════════════════════════════════════════════════════════════════
+
+Your form now has 4 layers of protection:
+
+🛡️ LAYER 1: Google reCAPTCHA v3 (AI-powered bot detection)
+🛡️ LAYER 2: Honeypot field (catches basic bots)
+🛡️ LAYER 3: Time-based check (prevents instant submissions)
+🛡️ LAYER 4: Multiple submission prevention (rate limiting)
+
+═══════════════════════════════════════════════════════════════════
+  OPTIONAL: HIDE reCAPTCHA BADGE
+═══════════════════════════════════════════════════════════════════
+
+Google allows hiding the badge IF you include privacy terms.
+
+We've already added the terms to your footer, so you CAN hide it:
+
+In styles.css, find this section (at the very end):
+
+/* Optional: Hide badge if you add reCAPTCHA terms to footer */
+/* Uncomment below to hide badge */
+/*
+.grecaptcha-badge {
+    visibility: hidden !important;
+}
+*/
+
+Remove the /* */ comment markers to hide the badge.
+
+═══════════════════════════════════════════════════════════════════
+  QUICK CHECKLIST
+═══════════════════════════════════════════════════════════════════
+
+□ Register site at google.com/recaptcha/admin
+□ Get Site Key and Secret Key
+□ Replace YOUR_SITE_KEY_HERE in index.html
+□ Replace YOUR_SITE_KEY_HERE in script.js
+□ Deploy files to website
+□ Test form submission
+□ Activate FormSubmit (check email)
+□ Verify email delivery to info@ardentfortlaw.com
+
+═══════════════════════════════════════════════════════════════════
+  SUPPORT
+═══════════════════════════════════════════════════════════════════
+
+Google reCAPTCHA: https://developers.google.com/recaptcha/docs/v3
+FormSubmit: https://formsubmit.co/
+
+═══════════════════════════════════════════════════════════════════
+  ALL DONE! YOUR FORM IS NOW ENTERPRISE-LEVEL SECURED! 🔒
+═══════════════════════════════════════════════════════════════════
