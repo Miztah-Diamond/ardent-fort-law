@@ -1,5 +1,36 @@
 // ===== ARDENT FORT LAW - GOTHIC LUXURY JAVASCRIPT =====
 
+// Hamburger Menu
+const hamburger = document.querySelector('.hamburger');
+const mobileMenuOverlay = document.querySelector('.mobile-menu-overlay');
+const mobileNavLinks = document.querySelectorAll('.mobile-nav a');
+
+if (hamburger) {
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        mobileMenuOverlay.classList.toggle('active');
+        document.body.style.overflow = mobileMenuOverlay.classList.contains('active') ? 'hidden' : '';
+    });
+}
+
+mobileNavLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        if (hamburger) hamburger.classList.remove('active');
+        if (mobileMenuOverlay) mobileMenuOverlay.classList.remove('active');
+        document.body.style.overflow = '';
+    });
+});
+
+if (mobileMenuOverlay) {
+    mobileMenuOverlay.addEventListener('click', (e) => {
+        if (e.target === mobileMenuOverlay) {
+            if (hamburger) hamburger.classList.remove('active');
+            mobileMenuOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    });
+}
+
 // Navbar scroll effect
 const navbar = document.querySelector('.navbar');
 
@@ -169,3 +200,73 @@ document.querySelectorAll('.btn-primary').forEach(btn => {
 });
 
 console.log('Ardent Fort Law - Gothic Luxury website loaded successfully');
+
+// ===== GOOGLE reCAPTCHA v3 FORM PROTECTION =====
+
+// Form submission with reCAPTCHA v3
+const contactForm = document.getElementById('contactForm');
+
+if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Show loading state
+        const submitBtn = contactForm.querySelector('button[type="submit"]');
+        const originalText = submitBtn.textContent;
+        submitBtn.textContent = 'Verifying...';
+        submitBtn.disabled = true;
+        
+        // Execute reCAPTCHA
+        grecaptcha.ready(function() {
+            grecaptcha.execute('6Lf7w2IsAAAAAE72QJvqOtLVtEQojaWApmGZz9Lw', {action: 'submit'}).then(function(token) {
+                // Add token to form
+                document.getElementById('recaptchaResponse').value = token;
+                
+                // Submit form
+                contactForm.submit();
+            }).catch(function(error) {
+                console.error('reCAPTCHA error:', error);
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+                alert('Security verification failed. Please try again.');
+            });
+        });
+    });
+}
+
+// Additional bot protection - time-based submission check
+let formLoadTime = Date.now();
+
+if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+        const submissionTime = Date.now();
+        const timeDiff = (submissionTime - formLoadTime) / 1000; // seconds
+        
+        // If submitted in less than 3 seconds, likely a bot
+        if (timeDiff < 3) {
+            e.preventDefault();
+            console.warn('Form submitted too quickly - possible bot');
+            return false;
+        }
+    });
+}
+
+// Prevent multiple rapid submissions
+let isSubmitting = false;
+
+if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+        if (isSubmitting) {
+            e.preventDefault();
+            return false;
+        }
+        isSubmitting = true;
+        
+        // Reset after 5 seconds
+        setTimeout(function() {
+            isSubmitting = false;
+        }, 5000);
+    });
+}
+
+console.log('reCAPTCHA v3 protection enabled');

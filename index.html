@@ -6,6 +6,9 @@
     <meta name="description" content="Ardent Fort Law - Barristers & Solicitors - Transaction Counsel for Regulated, Capital-Intensive, and Cross-Border Deals">
     <title>Ardent Fort Law | Barristers & Solicitors</title>
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- Google reCAPTCHA v3 -->
+    <script src="https://www.google.com/recaptcha/api.js?render=6Lf7w2IsAAAAAE72QJvqOtLVtEQojaWApmGZz9Lw"></script>
 </head>
 <body>
     <!-- Navigation -->
@@ -14,6 +17,13 @@
             <div class="logo">
                 <img src="logo.png" alt="Ardent Fort Law" class="logo-image">
             </div>
+            
+            <button class="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
             <ul class="nav-menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#what-we-do">Services</a></li>
@@ -24,6 +34,21 @@
             </ul>
         </div>
     </nav>
+    
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay">
+        <div class="mobile-menu-content">
+            <img src="logo.png" alt="Ardent Fort Law" class="mobile-menu-logo">
+            <nav class="mobile-nav">
+                <a href="#home">Home</a>
+                <a href="#what-we-do">Services</a>
+                <a href="#practice-areas">Practice Areas</a>
+                <a href="#why-nigeria">Investment</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </div>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
@@ -34,13 +59,16 @@
         
         <div class="hero-content">
             <div class="decorative-line"></div>
+            
+            <img src="logo.png" alt="Ardent Fort Law" class="hero-logo">
+            
+            <div class="decorative-line"></div>
+            
             <h1 class="hero-title">
                 <span class="hero-where">Where Capital,</span>
                 <span class="hero-regulation">Regulation, and</span>
                 <span class="hero-execution">Execution Align</span>
             </h1>
-            <div class="decorative-line"></div>
-            
             <p class="hero-subtitle">Transaction Counsel for Regulated, Capital-Intensive, and Cross-Border Deals</p>
             
             <div class="hero-buttons">
@@ -464,11 +492,14 @@
             
             <div class="contact-grid">
                 <div class="contact-form-wrapper">
-                    <form class="contact-form" action="https://formsubmit.co/YOUR-EMAIL@example.com" method="POST">
+                    <form class="contact-form" id="contactForm" action="https://formsubmit.co/info@ardentfortlaw.com" method="POST">
+                        <!-- Security Features -->
                         <input type="hidden" name="_subject" value="New inquiry from Ardent Fort Law website">
                         <input type="hidden" name="_captcha" value="false">
                         <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_next" value="https://www.ardentfortlaw.com/#contact">
                         <input type="text" name="_honey" style="display:none">
+                        <input type="hidden" name="g-recaptcha-response" id="recaptchaResponse">
                         
                         <div class="form-group">
                             <input type="text" name="name" placeholder="Full Name" required>
@@ -500,7 +531,7 @@
                     <div class="contact-detail">
                         <div class="detail-icon">♔</div>
                         <h4>Email</h4>
-                        <p>info@ardentfortlaw.com</p>
+                        <p><a href="mailto:info@ardentfortlaw.com" style="color: var(--gold); text-decoration: none;">info@ardentfortlaw.com</a></p>
                     </div>
                     <div class="contact-detail">
                         <div class="detail-icon">♕</div>
@@ -542,7 +573,7 @@
                 
                 <div class="footer-contact">
                     <h4>Contact</h4>
-                    <p>info@ardentfortlaw.com</p>
+                    <p><a href="mailto:info@ardentfortlaw.com" style="color: var(--light-gray); text-decoration: none;">info@ardentfortlaw.com</a></p>
                     <p>Lagos, Nigeria</p>
                 </div>
             </div>
@@ -552,6 +583,10 @@
             <div class="footer-bottom">
                 <p>&copy; 2026 Ardent Fort Law. All rights reserved.</p>
                 <p class="disclaimer">This website is for informational purposes only and does not constitute legal advice.</p>
+                <p class="disclaimer">This site is protected by reCAPTCHA and the Google 
+                    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" style="color: var(--gold);">Privacy Policy</a> and 
+                    <a href="https://policies.google.com/terms" target="_blank" rel="noopener" style="color: var(--gold);">Terms of Service</a> apply.
+                </p>
             </div>
         </div>
     </footer>
