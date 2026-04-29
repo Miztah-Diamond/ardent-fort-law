@@ -143,10 +143,12 @@ document.addEventListener('DOMContentLoaded', () => {
         // Page hero animation (inner pages)
         const pageHero = document.querySelector('.page-hero');
         if (pageHero) {
-            gsap.fromTo('.page-hero .section-label', { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.6, delay: 0.2, ease: 'power3.out' });
-            gsap.fromTo('.page-hero h1', { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.8, delay: 0.4, ease: 'power3.out' });
-            gsap.fromTo('.page-hero .page-description', { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.6, delay: 0.6, ease: 'power3.out' });
-            gsap.fromTo('.breadcrumb', { opacity: 0 }, { opacity: 1, duration: 0.5, delay: 0.3, ease: 'power3.out' });
+            const pageHeroTl = gsap.timeline({ defaults: { ease: 'power3.out' } });
+            pageHeroTl
+                .fromTo('.breadcrumb', { opacity: 0 }, { opacity: 1, duration: 0.5 }, 0.2)
+                .fromTo('.page-hero .section-label', { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.6 }, 0.2)
+                .fromTo('.page-hero h1', { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.8 }, 0.4)
+                .fromTo('.page-hero .page-description', { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.6 }, 0.6);
         }
 
         // Scroll-triggered reveals
