@@ -1,0 +1,104 @@
+/* âââââââââââââââââââââââââââââââââââââââââââââââ
+   ARDENT FORT LAW â Design Tokens
+   Dark Sovereign Gold Design System
+âââââââââââââââââââââââââââââââââââââââââââââââ */
+
+:root {
+    /* ââ Palette: Dark Mode (default) ââ */
+    --bg-primary: #0B0B0F;
+    --bg-secondary: #111118;
+    --bg-tertiary: #16161E;
+    --bg-card: #1A1A24;
+    --bg-elevated: #1E1E2A;
+    --bg-glass: rgba(26, 26, 36, 0.65);
+    --bg-overlay: rgba(11, 11, 15, 0.97);
+
+    --gold-100: #FFF8E7;
+    --gold-200: #F4E4C1;
+    --gold-300: #E8D5A3;
+    --gold-400: #D4AF37;
+    --gold-500: #C9A227;
+    --gold-600: #A8871F;
+    --gold-700: #7A6316;
+    --gold-gradient: linear-gradient(135deg, #D4AF37 0%, #F4E4C1 40%, #D4AF37 60%, #A8871F 100%);
+    --gold-gradient-text: linear-gradient(135deg, #F4E4C1 0%, #D4AF37 50%, #F4E4C1 100%);
+    --gold-glow: 0 0 30px rgba(212, 175, 55, 0.15);
+    --gold-glow-strong: 0 0 60px rgba(212, 175, 55, 0.25);
+
+    --text-primary: #E8E4DC;
+    --text-secondary: #A9A49B;
+    --text-muted: #6B6760;
+    --text-gold: #D4AF37;
+    --text-inverse: #0B0B0F;
+
+    --border-subtle: rgba(212, 175, 55, 0.08);
+    --border-light: rgba(212, 175, 55, 0.15);
+    --border-medium: rgba(212, 175, 55, 0.25);
+    --border-strong: rgba(212, 175, 55, 0.5);
+
+    /* ââ Typography ââ */
+    --font-display: 'Cinzel', 'Times New Roman', serif;
+    --font-body: 'Cormorant Garamond', 'Georgia', serif;
+    --font-ui: 'Inter', -apple-system, sans-serif;
+
+    /* ââ Spacing (8px base) ââ */
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-5: 1.25rem;
+    --space-6: 1.5rem;
+    --space-8: 2rem;
+    --space-10: 2.5rem;
+    --space-12: 3rem;
+    --space-16: 4rem;
+    --space-20: 5rem;
+    --space-24: 6rem;
+    --space-32: 8rem;
+
+    /* ââ Layout ââ */
+    --max-width: 1280px;
+    --section-padding: clamp(4rem, 8vw, 8rem);
+    --nav-height: 80px;
+
+    /* ââ Motion ââ */
+    --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+    --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+    --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+    --duration-fast: 0.2s;
+    --duration-base: 0.4s;
+    --duration-slow: 0.8s;
+
+    /* ââ Radius ââ */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --radius-full: 9999px;
+}
+
+/* ââ Light Mode ââ */
+[data-theme="light"] {
+    --bg-primary: #FAFAF7;
+    --bg-secondary: #F2F0EB;
+    --bg-tertiary: #EAE7E0;
+    --bg-card: #FFFFFF;
+    --bg-elevated: #FFFFFF;
+    --bg-glass: rgba(255, 255, 255, 0.85);
+    --bg-overlay: rgba(250, 250, 247, 0.97);
+
+    --gold-400: #B8941E;
+    --gold-gradient-text: linear-gradient(135deg, #8B6914 0%, #B8941E 50%, #8B6914 100%);
+    --gold-glow: 0 0 30px rgba(184, 148, 30, 0.1);
+    --gold-glow-strong: 0 0 60px rgba(184, 148, 30, 0.15);
+
+    --text-primary: #1A1A1A;
+    --text-secondary: #555249;
+    --text-muted: #8A857C;
+    --text-gold: #8B6914;
+    --text-inverse: #FAFAF7;
+
+    --border-subtle: rgba(0, 0, 0, 0.06);
+    --border-light: rgba(0, 0, 0, 0.1);
+    --border-medium: rgba(184, 148, 30, 0.25);
+    --border-strong: rgba(184, 148, 30, 0.5);
+}
