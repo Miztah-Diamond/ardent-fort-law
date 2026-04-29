@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About — Ardent Fort Law</title>
+    <meta name="description" content="Learn about Ardent Fort Law — a premium transaction execution law firm enabling capital deployment across structured finance, private equity, and development finance.">
+    <link rel="canonical" href="https://www.ardentfortlaw.com/about.html">
+    <!-- Open Graph -->
+    <meta property="og:title" content="About — Ardent Fort Law">
+    <meta property="og:description" content="Learn about Ardent Fort Law — a premium transaction execution law firm enabling capital deployment across structured finance, private equity, and development finance.">
+    <meta property="og:url" content="https://www.ardentfortlaw.com/about.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.ardentfortlaw.com/logo.png">
+    <meta property="og:site_name" content="Ardent Fort Law">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="About — Ardent Fort Law">
+    <meta name="twitter:description" content="Learn about Ardent Fort Law — a premium transaction execution law firm enabling capital deployment across structured finance, private equity, and development finance.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+
+    <!-- Page-specific styles -->
+    <style>
+        /* ── About sections ── */
+        .about-section {
+            padding: var(--section-padding) 0;
+        }
+
+        .about-section + .about-section {
+            border-top: 1px solid var(--border-subtle);
+        }
+
+        .about-section.alt-bg {
+            background: var(--bg-secondary);
+        }
+
+        .about-content {
+            max-width: 800px;
+        }
+
+        .about-content p {
+            margin-bottom: var(--space-6);
+        }
+
+        .about-content p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* ── Side by side grid ── */
+        .side-by-side {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-10);
+        }
+
+        @media (max-width: 768px) {
+            .side-by-side {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ── How We Work items ── */
+        .how-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--space-8);
+            margin-top: var(--space-12);
+        }
+
+        .how-grid .card h4 {
+            margin-top: var(--space-5);
+            margin-bottom: var(--space-4);
+        }
+
+        .how-grid .card p {
+            font-size: 1rem;
+        }
+
+        @media (max-width: 1024px) {
+            .how-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ── Callout spacing ── */
+        .callout-section {
+            padding: var(--space-16) 0;
+        }
+
+        /* ── Testimonial batch animation init ── */
+        .testimonial-card {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+    </style>
+
+    <!-- Schema: Organization -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Ardent Fort Law",
+        "description": "A premium transaction execution law firm enabling capital deployment across structured finance, private equity, and development finance.",
+        "url": "https://www.ardentfortlaw.com",
+        "logo": "https://www.ardentfortlaw.com/logo.png",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "Customer Service",
+            "telephone": "+2348000000000",
+            "availableLanguage": "English"
+        },
+        "sameAs": []
+    }
+    </script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+</head>
+<body>
+    <!-- Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- ═══════════════════════════════════════
+         NAVIGATION
+    ═══════════════════════════════════════ -->
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <div class="nav-inner">
+                <a href="index.html" class="nav-logo" aria-label="Ardent Fort Law — Home">
+                    <img src="logo.png" alt="Ardent Fort Law logo" width="48" height="48">
+                    <div class="nav-logo-text">
+                        <span class="nav-logo-name">Ardent Fort</span>
+                        <span class="nav-logo-sub">Law Practice</span>
+                    </div>
+                </a>
+
+                <ul class="nav-links" role="menubar">
+                    <li role="none"><a href="index.html" role="menuitem">Home</a></li>
+                    <li role="none"><a href="about.html" role="menuitem" class="active" aria-current="page">About</a></li>
+                    <li role="none"><a href="services.html" role="menuitem">Services</a></li>
+                    <li role="none"><a href="practice-areas.html" role="menuitem">Practice Areas</a></li>
+                    <li role="none"><a href="investment.html" role="menuitem">Investment</a></li>
+                    <li role="none"><a href="contact.html" role="menuitem">Contact</a></li>
+                    <li role="none"><a href="faq.html" role="menuitem">FAQ</a></li>
+                    <li role="none"><a href="contact.html" class="nav-cta" role="menuitem">Get Started</a></li>
+                </ul>
+
+                <div class="nav-right">
+                    <button class="theme-toggle" aria-label="Toggle light/dark theme" type="button">
+                        <i data-lucide="sun" class="icon-sun"></i>
+                        <i data-lucide="moon" class="icon-moon"></i>
+                    </button>
+                    <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu" type="button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobile navigation" aria-hidden="true">
+        <a href="index.html">Home</a>
+        <a href="about.html" aria-current="page">About</a>
+        <a href="services.html">Services</a>
+        <a href="practice-areas.html">Practice Areas</a>
+        <a href="investment.html">Investment</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+    </div>
+
+    <!-- ═══════════════════════════════════════
+         MAIN CONTENT
+    ═══════════════════════════════════════ -->
+    <main id="main-content">
+
+        <!-- ── Page Hero ── -->
+        <section class="page-hero" aria-labelledby="page-title">
+            <div class="container">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span class="separator" aria-hidden="true">/</span>
+                    <span aria-current="page">About</span>
+                </nav>
+                <span class="section-label">About the Firm</span>
+                <h1 id="page-title">About <span class="gold-text">Ardent Fort</span></h1>
+                <p class="page-description">A transaction execution law firm built for principals, investors, and institutions that move capital at scale.</p>
+            </div>
+        </section>
+
+        <!-- ── Mission Section ── -->
+        <section class="about-section" aria-labelledby="mission-title">
+            <div class="container">
+                <div class="about-content reveal">
+                    <span class="section-label">Our Mission</span>
+                    <h2 class="section-title" id="mission-title">Enabling Capital <span class="gold-text">Deployment</span></h2>
+                    <p>Ardent Fort Law exists to enable the efficient and secure deployment of capital across Africa and emerging markets. We work at the intersection of structured finance, private equity, development finance, and regulatory strategy to ensure that every transaction reaches its intended outcome.</p>
+                    <p>Our mission is not merely to provide legal counsel. It is to remove the friction that prevents capital from reaching the projects, businesses, and institutions that need it most. We understand that delayed closings, ambiguous documentation, and regulatory uncertainty cost our clients more than just legal fees — they cost opportunity.</p>
+                    <p>Every engagement is approached with the understanding that legal work must serve a commercial purpose. We measure our success not by the volume of advice rendered, but by the transactions closed and the capital successfully deployed.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── Philosophy Section ── -->
+        <section class="about-section alt-bg" aria-labelledby="philosophy-title">
+            <div class="container">
+                <div class="about-content reveal">
+                    <span class="section-label">Our Philosophy</span>
+                    <h2 class="section-title" id="philosophy-title">Legal Work Must <span class="gold-text">Enable Execution</span></h2>
+                    <p>Too often, legal teams operate in isolation from the commercial realities of a transaction. Documents are reviewed without understanding the underlying deal dynamics. Advice is rendered without considering the timing pressures that principals face. Risk is flagged without offering a path forward.</p>
+                    <p>At Ardent Fort Law, we reject this approach. Our philosophy is that legal work must enable execution, not merely advise on it. Every opinion we draft, every agreement we negotiate, and every structure we design is oriented toward one goal: getting the transaction done on terms that protect our clients and respect the commercial context.</p>
+                    <div class="highlight-block">
+                        <p>"We do not exist to tell clients what they cannot do. We exist to show them how it can be done — legally, structurally, and efficiently."</p>
+                    </div>
+                    <p>This philosophy shapes everything from how we staff matters to how we price our services. It is the reason our clients return to us for their most consequential transactions.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── How We Work Section ── -->
+        <section class="about-section" aria-labelledby="how-title">
+            <div class="container">
+                <div class="reveal" style="text-align: center; margin-bottom: var(--space-6);">
+                    <span class="section-label centered">How We Work</span>
+                    <h2 class="section-title" id="how-title">Built for <span class="gold-text">Transaction Execution</span></h2>
+                    <p class="section-subtitle" style="margin: 0 auto;">Our operating model is designed around three principles that set us apart from traditional law firms.</p>
+                </div>
+
+                <div class="how-grid">
+                    <div class="card reveal">
+                        <div class="icon-box">
+                            <i data-lucide="users"></i>
+                        </div>
+                        <h4>Extension of Your Deal Team</h4>
+                        <p>We do not operate as external advisors parachuted in at the last moment. We embed ourselves within your deal team from the earliest stages, aligning our work with your commercial timeline and negotiation strategy.</p>
+                    </div>
+                    <div class="card reveal">
+                        <div class="icon-box">
+                            <i data-lucide="clock"></i>
+                        </div>
+                        <h4>Early Involvement</h4>
+                        <p>The most costly legal mistakes happen when counsel is engaged too late. We insist on early involvement — reviewing term sheets, structuring vehicles, and identifying regulatory risks before they become deal-breakers.</p>
+                    </div>
+                    <div class="card reveal">
+                        <div class="icon-box">
+                            <i data-lucide="shield-check"></i>
+                        </div>
+                        <h4>Senior Oversight on Every Matter</h4>
+                        <p>Every matter at Ardent Fort receives direct senior oversight. Our clients never find themselves managed by juniors on critical workstreams. The partners who win the mandate are the partners who execute it.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── Engagement Criteria + Pricing Philosophy ── -->
+        <section class="about-section alt-bg" aria-labelledby="criteria-title">
+            <div class="container">
+                <div class="side-by-side">
+                    <div class="reveal-left">
+                        <span class="section-label">Engagement Criteria</span>
+                        <h3 id="criteria-title">Who We <span class="gold-text">Work With</span></h3>
+                        <p style="margin-bottom: var(--space-6);">We are selective about the engagements we accept. Our best work happens when we partner with clients who value precision, urgency, and outcomes over process.</p>
+                        <ul class="clean-list" aria-label="Engagement criteria">
+                            <li>Development finance institutions deploying concessional and blended capital</li>
+                            <li>Private equity and venture capital funds structuring investments across Africa</li>
+                            <li>Fintech companies navigating licensing, regulatory approvals, and fundraising</li>
+                            <li>Infrastructure sponsors requiring project finance and PPP structuring</li>
+                            <li>Sovereigns and multilateral institutions executing complex programmes</li>
+                        </ul>
+                    </div>
+                    <div class="reveal-right">
+                        <span class="section-label">Pricing Philosophy</span>
+                        <h3>How We <span class="gold-text">Price</span></h3>
+                        <p style="margin-bottom: var(--space-6);">We believe that pricing should reflect value delivered, not time consumed. Our pricing is structured to align our incentives with yours.</p>
+                        <ul class="clean-list" aria-label="Pricing approach">
+                            <li>Fixed fees for defined scopes of work, agreed in advance</li>
+                            <li>Milestone-based billing tied to transaction progress</li>
+                            <li>Retainer arrangements for ongoing advisory mandates</li>
+                            <li>Success-based components where appropriate for the matter</li>
+                            <li>Full transparency — no surprise invoices, no hidden disbursements</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── Callout ── -->
+        <section class="callout-section" aria-label="Firm positioning statement">
+            <div class="container">
+                <div class="callout reveal-scale">
+                    <p>We are not a volume-driven law firm. We are a <span class="gold-text">transaction execution partner.</span></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── Testimonials ── -->
+        <section class="testimonials" aria-labelledby="testimonials-title">
+            <div class="container">
+                <div style="text-align: center;" class="reveal">
+                    <span class="section-label centered">Client Perspectives</span>
+                    <h2 class="section-title" id="testimonials-title">What Our <span class="gold-text">Clients Say</span></h2>
+                </div>
+
+                <div class="testimonials-grid">
+                    <article class="testimonial-card" aria-label="Testimonial from DFI executive">
+                        <div class="testimonial-quote" aria-hidden="true">"</div>
+                        <blockquote>Ardent Fort understood the urgency of our disbursement timeline and structured the documentation accordingly. They did not just advise — they executed alongside us, meeting every deadline without compromising on quality.</blockquote>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar" aria-hidden="true">AO</div>
+                            <div>
+                                <div class="testimonial-name">Adaeze Okonkwo</div>
+                                <div class="testimonial-role">Director, Development Finance Institution</div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-card" aria-label="Testimonial from PE fund partner">
+                        <div class="testimonial-quote" aria-hidden="true">"</div>
+                        <blockquote>Their approach to deal structuring is exceptional. They anticipated regulatory issues we had not even considered and resolved them before they could impact our closing timeline. A genuinely senior team on every matter.</blockquote>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar" aria-hidden="true">KM</div>
+                            <div>
+                                <div class="testimonial-name">Kwame Mensah</div>
+                                <div class="testimonial-role">Managing Partner, Private Equity Fund</div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-card" aria-label="Testimonial from Fintech CEO">
+                        <div class="testimonial-quote" aria-hidden="true">"</div>
+                        <blockquote>From licensing through to our Series B, Ardent Fort has been our legal partner at every stage. They understand fintech, they understand regulation, and most importantly, they understand speed. Highly recommended.</blockquote>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar" aria-hidden="true">NB</div>
+                            <div>
+                                <div class="testimonial-name">Ngozi Bello</div>
+                                <div class="testimonial-role">CEO, Fintech Company</div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── Newsletter ── -->
+        <section class="newsletter" aria-labelledby="newsletter-title">
+            <div class="container">
+                <div class="newsletter-inner reveal">
+                    <h3 id="newsletter-title">Stay <span class="gold-text">Informed</span></h3>
+                    <p>Receive our transaction advisory insights, regulatory updates, and firm news directly to your inbox.</p>
+                    <form class="newsletter-form" aria-label="Newsletter signup">
+                        <label for="newsletter-email" class="sr-only">Email address</label>
+                        <input type="email" id="newsletter-email" name="email" placeholder="Enter your email address" required autocomplete="email">
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                    <p class="newsletter-disclaimer">No spam. Unsubscribe at any time. We respect your privacy.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ═══════════════════════════════════════
+         FOOTER
+    ═══════════════════════════════════════ -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <img src="logo.png" alt="Ardent Fort Law" width="60" height="60">
+                    <p>A premium transaction execution law firm enabling capital deployment across structured finance, private equity, and development finance institutions.</p>
+                </div>
+
+                <!-- Navigation -->
+                <div class="footer-col">
+                    <h5>Navigation</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="investment.html">Investment</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Practice Areas -->
+                <div class="footer-col">
+                    <h5>Practice Areas</h5>
+                    <ul>
+                        <li><a href="practice-areas.html">Structured Finance</a></li>
+                        <li><a href="practice-areas.html">Private Equity</a></li>
+                        <li><a href="practice-areas.html">Development Finance</a></li>
+                        <li><a href="practice-areas.html">Fintech &amp; Regulation</a></li>
+                        <li><a href="practice-areas.html">Project Finance</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="footer-col footer-newsletter">
+                    <h5>Newsletter</h5>
+                    <p>Get insights on transactions, regulation, and market developments.</p>
+                    <form class="footer-newsletter-form" aria-label="Footer newsletter signup">
+                        <label for="footer-email" class="sr-only">Email address</label>
+                        <input type="email" id="footer-email" name="email" placeholder="Your email" required autocomplete="email">
+                        <button type="submit">Join</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ardent Fort Law. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="faq.html">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ═══════════════════════════════════════
+         WHATSAPP FLOAT
+    ═══════════════════════════════════════ -->
+    <a href="https://wa.me/2348000000000" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
+        <i data-lucide="message-circle"></i>
+        <span class="whatsapp-tooltip">Chat with us</span>
+    </a>
+
+    <!-- Shared JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>

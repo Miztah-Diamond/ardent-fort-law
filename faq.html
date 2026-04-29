@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ — Ardent Fort Law</title>
+    <meta name="description" content="Frequently asked questions about Ardent Fort Law's commercial and transactional legal services, engagement process, pricing, and more.">
+    <link rel="canonical" href="https://www.ardentfortlaw.com/faq.html">
+    <!-- Open Graph -->
+    <meta property="og:title" content="FAQ — Ardent Fort Law">
+    <meta property="og:description" content="Frequently asked questions about Ardent Fort Law's commercial and transactional legal services, engagement process, pricing, and more.">
+    <meta property="og:url" content="https://www.ardentfortlaw.com/faq.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.ardentfortlaw.com/logo.png">
+    <meta property="og:site_name" content="Ardent Fort Law">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="FAQ — Ardent Fort Law">
+    <meta name="twitter:description" content="Frequently asked questions about Ardent Fort Law's commercial and transactional legal services, engagement process, pricing, and more.">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="logo.png" type="image/png">
+
+    <style>
+        /* ── FAQ Accordion ── */
+        .faq-section {
+            padding: var(--section-padding) 0;
+        }
+
+        .practice-item {
+            margin-bottom: var(--space-4);
+            border: 1px solid var(--border-subtle);
+            background: var(--bg-card);
+            transition: all var(--duration-base) var(--ease-out-quart);
+        }
+
+        .practice-item:hover {
+            border-color: var(--border-light);
+        }
+
+        .practice-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: var(--space-6) var(--space-8);
+            cursor: pointer;
+            transition: background var(--duration-fast);
+            gap: var(--space-4);
+        }
+
+        .practice-header:hover {
+            background: var(--bg-tertiary);
+        }
+
+        .practice-header h3 {
+            font-family: var(--font-body);
+            font-size: clamp(1.05rem, 1.5vw, 1.2rem);
+            font-weight: 600;
+            color: var(--text-primary);
+            line-height: 1.5;
+        }
+
+        .practice-toggle {
+            width: 20px;
+            height: 20px;
+            color: var(--gold-400);
+            flex-shrink: 0;
+            transition: transform var(--duration-base) var(--ease-out-expo);
+        }
+
+        .practice-item.active .practice-toggle {
+            transform: rotate(45deg);
+        }
+
+        .practice-body {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height var(--duration-slow) var(--ease-out-expo),
+                        padding var(--duration-base);
+        }
+
+        .practice-item.active .practice-body {
+            max-height: 600px;
+            padding: 0 var(--space-8) var(--space-8);
+            border-top: 1px solid var(--border-subtle);
+        }
+
+        .practice-body p {
+            font-size: 1.05rem;
+            line-height: 1.9;
+            color: var(--text-secondary);
+            padding-top: var(--space-6);
+        }
+
+        /* ── CTA Section ── */
+        .faq-cta {
+            padding: var(--section-padding) 0;
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border-subtle);
+        }
+
+        .faq-cta-inner {
+            text-align: center;
+            max-width: 640px;
+            margin: 0 auto;
+        }
+
+        .faq-cta-inner h2 {
+            margin-bottom: var(--space-5);
+        }
+
+        .faq-cta-inner p {
+            margin-bottom: var(--space-8);
+        }
+
+        @media (max-width: 768px) {
+            .practice-header {
+                padding: var(--space-5) var(--space-5);
+            }
+            .practice-item.active .practice-body {
+                padding: 0 var(--space-5) var(--space-5);
+            }
+        }
+    </style>
+
+    <!-- FAQPage Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What types of transactions does Ardent Fort Law handle?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We handle a broad range of commercial and transactional matters, including mergers and acquisitions, joint ventures, corporate restructuring, private equity and venture capital transactions, project finance, real estate acquisitions, regulatory compliance, and cross-border deals. Our focus is on structuring, negotiating, and closing transactions that protect your interests and create lasting value."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Who does Ardent Fort Law typically work with?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We work with entrepreneurs, startups, growing businesses, institutional investors, family offices, high-net-worth individuals, and multinational corporations. Our clients span industries including technology, real estate, energy, financial services, healthcare, and agriculture. Whether you are launching a new venture or scaling an established enterprise, we tailor our counsel to your specific needs."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Where is Ardent Fort Law located?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ardent Fort Law is headquartered in Lagos, Nigeria. We serve clients across Nigeria and work on cross-border transactions involving multiple African and international jurisdictions. We leverage technology to deliver seamless service regardless of your location."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How does Ardent Fort Law structure its pricing?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We offer flexible fee arrangements tailored to the nature and complexity of each engagement. Options include fixed fees for defined-scope projects, hourly billing for advisory work, retainer arrangements for ongoing counsel, and success-based or hybrid models for transactional matters. We provide transparent fee estimates before commencing any engagement."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is the engagement process?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Our process begins with an initial consultation to understand your objectives and assess your needs. We then provide a clear scope of work and fee proposal. Upon engagement, we assign a dedicated team, establish communication protocols, and set milestones to keep the matter on track. Regular updates and strategic check-ins ensure alignment throughout."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is the typical response time?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We pride ourselves on responsiveness. For active engagements, we aim to acknowledge communications within two to four business hours and provide substantive responses within twenty-four hours. For time-sensitive transactions, we offer accelerated timelines and are available outside standard business hours when the matter demands it."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How does Ardent Fort Law handle confidentiality?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Confidentiality is a cornerstone of our practice. All client information is protected by legal professional privilege and strict data security protocols. We execute non-disclosure agreements where required, maintain secure document management systems, and limit access to sensitive information on a need-to-know basis within our team."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What jurisdictions does Ardent Fort Law cover?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "While our primary jurisdiction is Nigeria, we regularly advise on transactions with cross-border elements spanning West Africa, East Africa, the United Kingdom, the United States, and the UAE. For matters requiring local expertise in other jurisdictions, we collaborate with trusted correspondent firms to ensure comprehensive coverage."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I get a preliminary assessment before formally engaging?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. We offer an initial consultation to discuss your matter, assess viability, and outline potential approaches. This allows both parties to determine whether Ardent Fort Law is the right fit for your needs before entering into a formal engagement. Contact us to schedule a consultation at your convenience."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does Ardent Fort Law provide legal advice through its website?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. The information on our website is for general informational purposes only and does not constitute legal advice. No attorney-client relationship is formed by accessing or using this website. For advice specific to your situation, please contact us directly to arrange a formal consultation."
+                }
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- ═══════════ NAVIGATION ═══════════ -->
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <div class="nav-inner">
+                <a href="index.html" class="nav-logo" aria-label="Ardent Fort Law — Home">
+                    <img src="logo.png" alt="Ardent Fort Law logo">
+                    <div class="nav-logo-text">
+                        <span class="nav-logo-name">Ardent Fort Law</span>
+                        <span class="nav-logo-sub">Legal Practitioners</span>
+                    </div>
+                </a>
+
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="practice-areas.html">Practice Areas</a></li>
+                    <li><a href="investment.html">Investment</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="faq.html" class="active">FAQ</a></li>
+                    <li><a href="contact.html" class="nav-cta">Get Started</a></li>
+                </ul>
+
+                <div class="nav-right">
+                    <button class="theme-toggle" aria-label="Toggle light/dark theme">
+                        <i data-lucide="sun" class="icon-sun"></i>
+                        <i data-lucide="moon" class="icon-moon"></i>
+                    </button>
+                    <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ═══════════ MOBILE MENU ═══════════ -->
+    <div class="mobile-menu" id="mobile-menu" role="dialog" aria-hidden="true" aria-label="Mobile navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="practice-areas.html">Practice Areas</a>
+        <a href="investment.html">Investment</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+    </div>
+
+    <!-- ═══════════ MAIN CONTENT ═══════════ -->
+    <main id="main-content">
+
+        <!-- ── Page Hero ── -->
+        <section class="page-hero" aria-label="Page header">
+            <div class="container">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span class="separator" aria-hidden="true">/</span>
+                    <span aria-current="page">FAQ</span>
+                </nav>
+                <div class="section-label" aria-hidden="true"><span>Common Questions</span></div>
+                <h1>Frequently Asked <span class="gold-text">Questions</span></h1>
+                <p class="page-description">Clear answers to common questions about our services, process, and how we work with clients.</p>
+            </div>
+        </section>
+
+        <!-- ── FAQ Accordion ── -->
+        <section class="faq-section" aria-label="Frequently asked questions">
+            <div class="container">
+
+                <div class="practice-item reveal" role="region">
+                    <div class="practice-header" role="button" tabindex="0" aria-expanded="false">
+                        <h3>What types of transactions does Ardent Fort Law handle?</h3>
+                        <i data-lucide="plus" class="practice-toggle" aria-hidden="true"></i>
+                    </div>
+                    <div class="practice-body" role="region">
+                        <p>We handle a broad range of commercial and transactional matters, including mergers and acquisitions, joint ventures, corporate restructuring, private equity and venture capital transactions, project finance, real estate acquisitions, regulatory compliance, and cross-border deals. Our focus is on structuring, negotiating, and closing transactions that protect your interests and create lasting value.</p>
+                    </div>
+                </div>
+
+                <div class="practice-item reveal" role="region">
+                    <div class="practice-header" role="button" tabindex="0" aria-expanded="false">
+                        <h3>Who does Ardent Fort Law typically work with?</h3>
+                        <i data-lucide="plus" class="practice-toggle" aria-hidden="true"></i>
+                    </div>
+                    <div class="practice-body" role="region">
+                        <p>We work with entrepreneurs, startups, growing businesses, institutional investors, family offices, high-net-worth individuals, and multinational corporations. Our clients span industries including technology, real estate, energy, financial services, healthcare, and agriculture. Whether you are launching a new venture or scaling an established enterprise, we tailor our counsel to your specific needs.</p>
+                    </div>
+                </div>
+
+                <div class="practice-item reveal" role="region">
+                    <div class="practice-header" role="button" tabindex="0" aria-expanded="false">
+                        <h3>Where is Ardent Fort Law located?</h3>
+                        <i data-lucide="plus" class="practice-toggle" aria-hidden="true"></i>
+                    </div>
+                    <div class="practice-body" role="region">
+                        <p>Ardent Fort Law is headquartered in Lagos, Nigeria. We serve clients across Nigeria and work on cross-border transactions involving multiple African and international jurisdictions. We leverage technology to deliver seamless service regardless of your location.</p>
+                    </div>
+                </div>
+
+                <div class="practice-item reveal" role="region">
+                    <div class="practice-header" role="button" tabindex="0" aria-expanded="false">
+                        <h3>How does Ardent Fort Law structure its pricing?</h3>
+                        <i data-lucide="plus" class="practice-toggle" aria-hidden="true"></i>
+                    </div>
+                    <div class="practice-body" role="region">
+                        <p>We offer flexible fee arrangements tailored to the nature and complexity of each engagement. Options include fixed fees for defined-scope projects, hourly billing for advisory work, retainer arrangements for ongoing counsel, and success-based or hybrid models for transactional matters. We provide transparent fee estimates before commencing any engagement.</p>
+                    </div>
+                </div>
+
+                <div class="practice-item reveal" role="region">
+                    <div class="practice-header" role="button" tabindex="0" aria-expanded="false">
+                        <h3>What is the engagement process?</h3>
+                        <i data-lucide="plus" class="practice-toggle" aria-hidden="true"></i>
+                    </div>
+                    <div class="practice-body" role="region">
+                        <p>Our process begins with an initial consultation to understand your objectives and assess your needs. We then provide a clear scope of work and fee proposal. Upon engagement, we assign a dedicated team, establish communication protocols, and set milestones to keep the matter on track. Regular updates and strategic check-ins ensure alignment throughout.</p>
+                    </div>
+                </div>
+
+                <div class="practice-item reveal" role="region">
+                    <div class="practice-header" role="button" tabindex="0" aria-expanded="false">
+                        <h3>What is the typical response time?</h3>
+                        <i data-lucide="plus" class="practice-toggle" aria-hidden="true"></i>
+                    </div>
+                    <div class="practice-body" role="region">
+                        <p>We pride ourselves on responsiveness. For active engagements, we aim to acknowledge communications within two to four business hours and provide substantive responses within twenty-four hours. For time-sensitive transactions, we offer accelerated timelines and are available outside standard business hours when the matter demands it.</p>
+                    </div>
+                </div>
+
+                <div class="practice-item reveal" role="region">
+                    <div class="practice-header" role="button" tabindex="0" aria-expanded="false">
+                        <h3>How does Ardent Fort Law handle confidentiality?</h3>
+                        <i data-lucide="plus" class="practice-toggle" aria-hidden="true"></i>
+                    </div>
+                    <div class="practice-body" role="region">
+                        <p>Confidentiality is a cornerstone of our practice. All client information is protected by legal professional privilege and strict data security protocols. We execute non-disclosure agreements where required, maintain secure document management systems, and limit access to sensitive information on a need-to-know basis within our team.</p>
+                    </div>
+                </div>
+
+                <div class="practice-item reveal" role="region">
+                    <div class="practice-header" role="button" tabindex="0" aria-expanded="false">
+                        <h3>What jurisdictions does Ardent Fort Law cover?</h3>
+                        <i data-lucide="plus" class="practice-toggle" aria-hidden="true"></i>
+                    </div>
+                    <div class="practice-body" role="region">
+                        <p>While our primary jurisdiction is Nigeria, we regularly advise on transactions with cross-border elements spanning West Africa, East Africa, the United Kingdom, the United States, and the UAE. For matters requiring local expertise in other jurisdictions, we collaborate with trusted correspondent firms to ensure comprehensive coverage.</p>
+                    </div>
+                </div>
+
+                <div class="practice-item reveal" role="region">
+                    <div class="practice-header" role="button" tabindex="0" aria-expanded="false">
+                        <h3>Can I get a preliminary assessment before formally engaging?</h3>
+                        <i data-lucide="plus" class="practice-toggle" aria-hidden="true"></i>
+                    </div>
+                    <div class="practice-body" role="region">
+                        <p>Yes. We offer an initial consultation to discuss your matter, assess viability, and outline potential approaches. This allows both parties to determine whether Ardent Fort Law is the right fit for your needs before entering into a formal engagement. Contact us to schedule a consultation at your convenience.</p>
+                    </div>
+                </div>
+
+                <div class="practice-item reveal" role="region">
+                    <div class="practice-header" role="button" tabindex="0" aria-expanded="false">
+                        <h3>Does Ardent Fort Law provide legal advice through its website?</h3>
+                        <i data-lucide="plus" class="practice-toggle" aria-hidden="true"></i>
+                    </div>
+                    <div class="practice-body" role="region">
+                        <p>No. The information on our website is for general informational purposes only and does not constitute legal advice. No attorney-client relationship is formed by accessing or using this website. For advice specific to your situation, please contact us directly to arrange a formal consultation.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ── CTA ── -->
+        <section class="faq-cta" aria-label="Contact call to action">
+            <div class="container">
+                <div class="faq-cta-inner reveal">
+                    <div class="section-label centered"><span>Still Have Questions?</span></div>
+                    <h2>Let's <span class="gold-text">Talk</span></h2>
+                    <p>If your question isn't answered above, our team is ready to help. Reach out and we'll respond promptly.</p>
+                    <a href="contact.html" class="btn btn-primary">
+                        Contact Us <i data-lucide="arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ═══════════ FOOTER ═══════════ -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <img src="logo.png" alt="Ardent Fort Law logo">
+                    <p>Commercial and transactional legal counsel for businesses, investors, and institutions building across Africa and beyond.</p>
+                </div>
+
+                <!-- Navigation -->
+                <div class="footer-col">
+                    <h5>Navigation</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Practice Areas -->
+                <div class="footer-col">
+                    <h5>Practice Areas</h5>
+                    <ul>
+                        <li><a href="practice-areas.html">Mergers &amp; Acquisitions</a></li>
+                        <li><a href="practice-areas.html">Corporate Advisory</a></li>
+                        <li><a href="practice-areas.html">Private Equity</a></li>
+                        <li><a href="practice-areas.html">Real Estate</a></li>
+                        <li><a href="practice-areas.html">Regulatory Compliance</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="footer-col footer-newsletter">
+                    <h5>Newsletter</h5>
+                    <p>Stay informed with legal insights and firm updates.</p>
+                    <form class="footer-newsletter-form" aria-label="Newsletter signup">
+                        <input type="email" placeholder="Your email" required aria-label="Email address">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ardent Fort Law. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ═══════════ WHATSAPP FLOAT ═══════════ -->
+    <a href="https://wa.me/2348000000000" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
+        <i data-lucide="message-circle" aria-hidden="true"></i>
+        <span class="whatsapp-tooltip">Chat with us</span>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

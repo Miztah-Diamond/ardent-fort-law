@@ -1,596 +1,1000 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ardent Fort Law - Barristers & Solicitors - Transaction Counsel for Regulated, Capital-Intensive, and Cross-Border Deals">
-    <title>Ardent Fort Law | Barristers & Solicitors</title>
-    <link rel="stylesheet" href="styles.css">
-    
-    <!-- Google reCAPTCHA v3 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- ══════════ PRIMARY SEO ══════════ -->
+    <title>Ardent Fort Law | Transaction Counsel for Regulated, Capital-Intensive & Cross-Border Deals in Nigeria</title>
+    <meta name="description" content="Ardent Fort Law is a specialist transaction law firm in Lagos, Nigeria advising on complex, regulated, and capital-intensive transactions. We serve DFIs, PE funds, venture capital, and project sponsors deploying capital across emerging markets.">
+    <meta name="keywords" content="transaction law firm Nigeria, cross-border deal counsel Lagos, fintech regulatory lawyer Nigeria, energy transaction counsel, real estate infrastructure lawyer Lagos, DFI legal counsel Africa, private equity lawyer Nigeria, emerging markets legal services, data protection compliance Nigeria">
+    <meta name="author" content="Ardent Fort Law">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <link rel="canonical" href="https://www.ardentfortlaw.com/">
+
+    <!-- ══════════ OPEN GRAPH ══════════ -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Ardent Fort Law">
+    <meta property="og:title" content="Ardent Fort Law | Barristers & Solicitors — Transaction Counsel for High-Stakes Deals">
+    <meta property="og:description" content="Specialist transaction law firm advising on complex, regulated, and capital-intensive transactions across Nigeria and emerging markets.">
+    <meta property="og:url" content="https://www.ardentfortlaw.com/">
+    <meta property="og:image" content="https://www.ardentfortlaw.com/logo.png">
+    <meta property="og:locale" content="en_NG">
+
+    <!-- ══════════ TWITTER CARD ══════════ -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ardent Fort Law | Barristers & Solicitors">
+    <meta name="twitter:description" content="Transaction Counsel for Regulated, Capital-Intensive & Cross-Border Deals in Nigeria.">
+    <meta name="twitter:image" content="https://www.ardentfortlaw.com/logo.png">
+
+    <!-- ══════════ GEO ══════════ -->
+    <meta name="geo.region" content="NG-LA">
+    <meta name="geo.placename" content="Lagos, Nigeria">
+
+    <!-- ══════════ SCHEMA — LegalService ══════════ -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LegalService",
+        "@id": "https://www.ardentfortlaw.com/#organization",
+        "name": "Ardent Fort Law",
+        "alternateName": "Ardent Fort Law — Barristers & Solicitors",
+        "url": "https://www.ardentfortlaw.com",
+        "logo": "https://www.ardentfortlaw.com/logo.png",
+        "description": "Specialist transaction law firm advising on complex, regulated, and capital-intensive transactions across Nigeria and emerging markets.",
+        "email": "info@ardentfortlaw.com",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Lagos",
+            "addressRegion": "Lagos",
+            "addressCountry": "NG"
+        },
+        "areaServed": [
+            { "@type": "Country", "name": "Nigeria" },
+            { "@type": "Continent", "name": "Africa" }
+        ],
+        "knowsAbout": [
+            "Transaction Structuring", "Regulatory Compliance", "Cross-Border Investment",
+            "Fintech Law", "Energy Law", "Real Estate Law", "Private Equity",
+            "Data Protection Compliance", "Infrastructure Finance"
+        ],
+        "priceRange": "$$$$",
+        "openingHours": "Mo-Fr 08:00-18:00"
+    }
+    </script>
+
+    <!-- ══════════ SCHEMA — FAQPage ══════════ -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What types of transactions does Ardent Fort Law handle?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We specialize in complex, regulated, and capital-intensive transactions including fintech, energy, real estate, infrastructure, cross-border private capital, and data protection compliance across Nigeria and emerging markets."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Who does Ardent Fort Law work with?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We work with international and regional DFIs, global PE and venture capital funds, infrastructure and energy sponsors, fintech founders and boards, and family offices and institutional investors."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How does Ardent Fort Law price its services?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Our fee structures are aligned with outcomes, not hours. We offer flat transaction fees, success-linked or hybrid arrangements."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- ══════════ ASSETS ══════════ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="https://www.google.com/recaptcha/api.js?render=6Lf7w2IsAAAAAE72QJvqOtLVtEQojaWApmGZz9Lw"></script>
+
+    <style>
+    /* ═══════ HOME PAGE STYLES ═══════ */
+
+    /* ── Hero ── */
+    .hero {
+        position: relative;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 120px 0 80px;
+        overflow: hidden;
+    }
+
+    .hero-bg {
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+    }
+
+    .hero-bg::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background:
+            radial-gradient(ellipse 80% 60% at 50% 40%, rgba(212, 175, 55, 0.04) 0%, transparent 60%),
+            radial-gradient(ellipse 60% 50% at 20% 80%, rgba(212, 175, 55, 0.02) 0%, transparent 60%),
+            var(--bg-primary);
+    }
+
+    .hero-bg::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-image:
+            linear-gradient(rgba(212, 175, 55, 0.03) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(212, 175, 55, 0.03) 1px, transparent 1px);
+        background-size: 60px 60px;
+        mask-image: radial-gradient(ellipse at center, black 20%, transparent 70%);
+        -webkit-mask-image: radial-gradient(ellipse at center, black 20%, transparent 70%);
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 var(--space-6);
+    }
+
+    .hero-logo {
+        width: 120px;
+        height: auto;
+        margin: 0 auto var(--space-12);
+        filter: drop-shadow(0 0 40px rgba(212, 175, 55, 0.2));
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    .hero-eyebrow {
+        font-family: var(--font-ui);
+        font-size: 0.72rem;
+        font-weight: 600;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        color: var(--gold-400);
+        margin-bottom: var(--space-8);
+        opacity: 0;
+    }
+
+    .hero h1 {
+        font-size: clamp(2.4rem, 5.5vw, 4.2rem);
+        font-weight: 700;
+        line-height: 1.15;
+        margin-bottom: var(--space-8);
+        letter-spacing: 0.02em;
+        opacity: 0;
+    }
+
+    .hero h1 .line { display: block; }
+
+    .hero h1 .accent {
+        background: var(--gold-gradient-text);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    .hero-description {
+        font-size: clamp(1.1rem, 1.6vw, 1.3rem);
+        color: var(--text-secondary);
+        max-width: 650px;
+        margin: 0 auto var(--space-12);
+        font-style: italic;
+        line-height: 1.9;
+        opacity: 0;
+    }
+
+    .hero-actions {
+        display: flex;
+        gap: var(--space-5);
+        justify-content: center;
+        flex-wrap: wrap;
+        opacity: 0;
+    }
+
+    .hero-scroll {
+        position: absolute;
+        bottom: var(--space-10);
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: var(--space-3);
+        color: var(--text-muted);
+        font-family: var(--font-ui);
+        font-size: 0.65rem;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        opacity: 0;
+    }
+
+    .scroll-line {
+        width: 1px;
+        height: 40px;
+        background: linear-gradient(to bottom, var(--gold-400), transparent);
+        animation: scrollPulse 2s ease-in-out infinite;
+    }
+
+    @keyframes scrollPulse {
+        0%, 100% { opacity: 0.3; transform: scaleY(0.6); }
+        50% { opacity: 1; transform: scaleY(1); }
+    }
+
+    /* ── Intro ── */
+    .intro {
+        padding: var(--section-padding) 0;
+        background: var(--bg-secondary);
+        border-top: 1px solid var(--border-subtle);
+        border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .intro-inner {
+        max-width: 860px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .intro-lead {
+        font-size: clamp(1.3rem, 2.2vw, 1.65rem);
+        color: var(--gold-200);
+        line-height: 1.9;
+        margin-bottom: var(--space-8);
+        font-weight: 500;
+    }
+
+    .intro-body {
+        font-size: 1.15rem;
+        color: var(--text-secondary);
+        line-height: 2;
+        margin-bottom: var(--space-12);
+    }
+
+    /* ── Services Grid ── */
+    .services { padding: var(--section-padding) 0; }
+
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--space-8);
+        margin: var(--space-12) 0;
+    }
+
+    .service-card {
+        padding: var(--space-10);
+        background: var(--bg-card);
+        border: 1px solid var(--border-subtle);
+        transition: all var(--duration-base) var(--ease-out-quart);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .service-card::before {
+        content: '';
+        position: absolute;
+        top: 0; left: 0; right: 0;
+        height: 2px;
+        background: var(--gold-gradient);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform var(--duration-slow) var(--ease-out-expo);
+    }
+
+    .service-card:hover::before { transform: scaleX(1); }
+
+    .service-card:hover {
+        border-color: var(--border-light);
+        transform: translateY(-4px);
+        box-shadow: var(--gold-glow);
+    }
+
+    .service-card h3 {
+        font-size: 1.2rem;
+        margin-bottom: var(--space-4);
+        font-weight: 600;
+        color: var(--gold-200);
+    }
+
+    .service-card p {
+        font-size: 1.05rem;
+        color: var(--text-secondary);
+        line-height: 1.8;
+    }
+
+    .services-statement {
+        text-align: center;
+        max-width: 700px;
+        margin: 0 auto;
+        padding: var(--space-8) 0;
+        border-top: 1px solid var(--border-subtle);
+    }
+
+    .services-statement p {
+        font-family: var(--font-display);
+        font-size: 1.2rem;
+        color: var(--gold-400);
+        font-style: italic;
+        font-weight: 500;
+    }
+
+    /* ── Clients ── */
+    .clients {
+        padding: var(--section-padding) 0;
+        background: var(--bg-secondary);
+        border-top: 1px solid var(--border-subtle);
+    }
+
+    .clients-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: var(--space-5);
+        margin: var(--space-12) 0;
+    }
+
+    .client-card {
+        text-align: center;
+        padding: var(--space-8) var(--space-5);
+        border: 1px solid var(--border-subtle);
+        background: var(--bg-primary);
+        transition: all var(--duration-base) var(--ease-out-quart);
+    }
+
+    .client-card:hover {
+        border-color: var(--border-medium);
+        transform: translateY(-4px);
+        box-shadow: var(--gold-glow);
+    }
+
+    .client-card-icon { color: var(--gold-400); margin-bottom: var(--space-5); }
+    .client-card-icon i { width: 28px; height: 28px; }
+
+    .client-card h4 {
+        font-family: var(--font-ui);
+        font-size: 0.82rem;
+        font-weight: 500;
+        color: var(--text-primary);
+        text-transform: none;
+        line-height: 1.5;
+    }
+
+    .clients-note {
+        text-align: center;
+        font-style: italic;
+        color: var(--text-secondary);
+        max-width: 700px;
+        margin: 0 auto;
+        font-size: 1.1rem;
+    }
+
+    /* ── Practice Preview ── */
+    .practice-preview {
+        padding: var(--section-padding) 0;
+    }
+
+    .practice-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-6);
+        margin: var(--space-12) 0;
+    }
+
+    .practice-card-link {
+        display: flex;
+        align-items: flex-start;
+        gap: var(--space-5);
+        padding: var(--space-8);
+        border: 1px solid var(--border-subtle);
+        background: var(--bg-card);
+        transition: all var(--duration-base) var(--ease-out-quart);
+    }
+
+    .practice-card-link:hover {
+        border-color: var(--border-medium);
+        transform: translateY(-3px);
+        box-shadow: var(--gold-glow);
+    }
+
+    .practice-card-link h3 {
+        font-size: 1.1rem;
+        color: var(--gold-200);
+        margin-bottom: var(--space-2);
+    }
+
+    .practice-card-link p {
+        font-size: 0.95rem;
+        color: var(--text-muted);
+        line-height: 1.7;
+    }
+
+    /* ── Differentiators ── */
+    .differentiators {
+        padding: var(--section-padding) 0;
+        background: var(--bg-secondary);
+        border-top: 1px solid var(--border-subtle);
+    }
+
+    .diff-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: var(--space-5);
+        margin: var(--space-12) 0;
+    }
+
+    .diff-card {
+        text-align: center;
+        padding: var(--space-8) var(--space-5);
+        border: 1px solid var(--border-subtle);
+        background: var(--bg-primary);
+        transition: all var(--duration-base) var(--ease-out-quart);
+    }
+
+    .diff-card:hover {
+        border-color: var(--border-medium);
+        transform: translateY(-6px);
+        box-shadow: var(--gold-glow);
+    }
+
+    .diff-card i { color: var(--gold-400); width: 32px; height: 32px; margin-bottom: var(--space-5); }
+    .diff-card h4 { font-size: 0.95rem; color: var(--gold-200); margin-bottom: var(--space-3); }
+    .diff-card p { font-family: var(--font-ui); font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; }
+
+    /* ── Contact Preview ── */
+    .contact-preview {
+        padding: var(--section-padding) 0;
+    }
+
+    .contact-grid {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        gap: var(--space-10);
+        max-width: 960px;
+        margin: var(--space-12) auto 0;
+    }
+
+    .contact-form-card {
+        padding: var(--space-10);
+        border: 1px solid var(--border-subtle);
+        background: var(--bg-card);
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-5);
+    }
+
+    .contact-info-cards {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-5);
+    }
+
+    .info-card {
+        padding: var(--space-6);
+        border: 1px solid var(--border-subtle);
+        background: var(--bg-card);
+        display: flex;
+        align-items: flex-start;
+        gap: var(--space-4);
+    }
+
+    .info-card h4 {
+        font-family: var(--font-ui);
+        font-size: 0.75rem;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--gold-400);
+        margin-bottom: var(--space-1);
+    }
+
+    .info-card p { font-size: 1rem; color: var(--text-secondary); }
+    .info-card a { color: var(--gold-300); }
+    .info-card a:hover { color: var(--gold-200); }
+
+    /* ── Responsive ── */
+    @media (max-width: 1024px) {
+        .services-grid { grid-template-columns: repeat(2, 1fr); }
+        .clients-grid { grid-template-columns: repeat(3, 1fr); }
+        .diff-grid { grid-template-columns: repeat(3, 1fr); }
+        .practice-cards { grid-template-columns: 1fr; }
+        .contact-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 768px) {
+        .hero h1 { font-size: clamp(1.8rem, 6vw, 2.5rem); }
+        .hero-logo { width: 80px; }
+        .hero-actions { flex-direction: column; width: 100%; }
+        .hero-actions .btn { width: 100%; justify-content: center; }
+        .services-grid { grid-template-columns: 1fr; }
+        .clients-grid { grid-template-columns: repeat(2, 1fr); }
+        .diff-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 480px) {
+        .clients-grid { grid-template-columns: 1fr; }
+        .diff-grid { grid-template-columns: 1fr; }
+    }
+    </style>
 </head>
+
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">
-                <img src="logo.png" alt="Ardent Fort Law" class="logo-image">
-            </div>
-            
-            <button class="hamburger" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            
-            <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#what-we-do">Services</a></li>
-                <li><a href="#practice-areas">Practice Areas</a></li>
-                <li><a href="#why-nigeria">Investment</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact" class="nav-cta">Contact</a></li>
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <!-- ═══════ NAVIGATION ═══════ -->
+    <nav class="nav" role="navigation" aria-label="Primary navigation">
+        <div class="container nav-inner">
+            <a href="index.html" class="nav-logo" aria-label="Ardent Fort Law — Home">
+                <img src="logo.png" alt="Ardent Fort Law" width="48" height="48" loading="eager">
+                <div class="nav-logo-text">
+                    <span class="nav-logo-name">Ardent Fort</span>
+                    <span class="nav-logo-sub">Barristers &amp; Solicitors</span>
+                </div>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="practice-areas.html">Practice Areas</a></li>
+                <li><a href="investment.html">Investment</a></li>
+                <li><a href="contact.html" class="nav-cta">Schedule Consultation</a></li>
             </ul>
+
+            <div class="nav-right">
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <i data-lucide="sun" class="icon-sun"></i>
+                    <i data-lucide="moon" class="icon-moon"></i>
+                </button>
+                <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
         </div>
     </nav>
-    
-    <!-- Mobile Menu Overlay -->
-    <div class="mobile-menu-overlay">
-        <div class="mobile-menu-content">
-            <img src="logo.png" alt="Ardent Fort Law" class="mobile-menu-logo">
-            <nav class="mobile-nav">
-                <a href="#home">Home</a>
-                <a href="#what-we-do">Services</a>
-                <a href="#practice-areas">Practice Areas</a>
-                <a href="#why-nigeria">Investment</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </div>
+
+    <!-- ═══════ MOBILE MENU ═══════ -->
+    <div class="mobile-menu" role="dialog" aria-label="Mobile navigation" aria-hidden="true">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="practice-areas.html">Practice Areas</a>
+        <a href="investment.html">Investment</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
     </div>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-ornament top-left"></div>
-        <div class="hero-ornament top-right"></div>
-        <div class="hero-ornament bottom-left"></div>
-        <div class="hero-ornament bottom-right"></div>
-        
+    <!-- ═══════ HERO ═══════ -->
+    <header class="hero" id="home">
+        <div class="hero-bg" aria-hidden="true"></div>
         <div class="hero-content">
-            <div class="decorative-line"></div>
-            
-            <img src="logo.png" alt="Ardent Fort Law" class="hero-logo">
-            
-            <div class="decorative-line"></div>
-            
-            <h1 class="hero-title">
-                <span class="hero-where">Where Capital,</span>
-                <span class="hero-regulation">Regulation, and</span>
-                <span class="hero-execution">Execution Align</span>
+            <img src="logo.png" alt="" class="hero-logo" aria-hidden="true" width="120" height="120">
+            <p class="hero-eyebrow">Transaction Counsel — Lagos, Nigeria</p>
+            <h1>
+                <span class="line">Where Capital,</span>
+                <span class="line"><span class="accent">Regulation,</span> and</span>
+                <span class="line">Execution Align</span>
             </h1>
-            <p class="hero-subtitle">Transaction Counsel for Regulated, Capital-Intensive, and Cross-Border Deals</p>
-            
-            <div class="hero-buttons">
-                <a href="#what-we-do" class="btn btn-primary">Our Expertise</a>
-                <a href="#contact" class="btn btn-secondary">Schedule Consultation</a>
+            <p class="hero-description">Specialist transaction counsel for regulated, capital-intensive, and cross-border deals across Nigeria and emerging markets.</p>
+            <div class="hero-actions">
+                <a href="services.html" class="btn btn-primary">
+                    <i data-lucide="briefcase"></i>
+                    Our Expertise
+                </a>
+                <a href="contact.html" class="btn btn-outline">
+                    <i data-lucide="calendar"></i>
+                    Schedule Consultation
+                </a>
             </div>
         </div>
-    </section>
-
-    <!-- Introduction -->
-    <section class="intro">
-        <div class="container">
-            <div class="section-divider">
-                <span class="divider-ornament">◆</span>
-            </div>
-            
-            <div class="intro-content">
-                <p class="intro-lead">Ardent Fort Law is a specialist transaction law firm advising on complex, regulated, and capital-intensive transactions across emerging markets.</p>
-                
-                <p class="intro-text">We support international investors, DFIs, private equity, venture capital, and project sponsors deploying capital into Nigeria and other emerging markets—where regulatory certainty, execution discipline, and local fluency are critical to outcomes.</p>
-                
-                <div class="intro-statement">
-                    <div class="statement-border"></div>
-                    <p class="statement-text">We do not practice general law.<br>We structure, de-risk, and execute transactions.</p>
-                    <div class="statement-border"></div>
-                </div>
-            </div>
+        <div class="hero-scroll" aria-hidden="true">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
         </div>
-    </section>
+    </header>
 
-    <!-- What We Do -->
-    <section id="what-we-do" class="what-we-do">
+    <main id="main">
+        <!-- ═══════ INTRO ═══════ -->
+        <section class="intro" aria-label="Firm overview">
+            <div class="container">
+                <div class="intro-inner">
+                    <p class="intro-lead reveal">Ardent Fort Law is a specialist transaction law firm advising on complex, regulated, and capital-intensive transactions across emerging markets.</p>
+                    <p class="intro-body reveal">We support international investors, DFIs, private equity, venture capital, and project sponsors deploying capital into Nigeria and other emerging markets — where regulatory certainty, execution discipline, and local fluency are critical to outcomes.</p>
+                    <div class="callout reveal-scale">
+                        <p>We do not practice general law.<br>We structure, de-risk, and execute transactions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════ SERVICES ═══════ -->
+        <section class="services" id="services" aria-labelledby="services-title">
+            <div class="container">
+                <div class="section-label reveal"><span>What We Do</span></div>
+                <h2 class="section-title reveal" id="services-title">Transaction <span class="gold-text">Execution</span> Counsel</h2>
+                <p class="section-subtitle reveal">We act as execution counsel on transactions involving regulatory complexity, cross-border capital flows, multi-party risk allocation, and tight timelines.</p>
+
+                <div class="services-grid">
+                    <article class="service-card reveal">
+                        <div class="icon-box"><i data-lucide="scale"></i></div>
+                        <h3>Transaction Structuring</h3>
+                        <p>Structuring transactions that align commercial, regulatory, and funding requirements — from term sheet through financial close.</p>
+                        <a href="services.html" class="btn-ghost">Learn more <i data-lucide="arrow-right"></i></a>
+                    </article>
+                    <article class="service-card reveal">
+                        <div class="icon-box"><i data-lucide="shield-check"></i></div>
+                        <h3>Regulatory De-Risking</h3>
+                        <p>Anticipating approval, licensing, and compliance risk before they become obstacles — ensuring regulatory certainty at every stage.</p>
+                        <a href="services.html" class="btn-ghost">Learn more <i data-lucide="arrow-right"></i></a>
+                    </article>
+                    <article class="service-card reveal">
+                        <div class="icon-box"><i data-lucide="target"></i></div>
+                        <h3>Execution Through Close</h3>
+                        <p>Driving transactions from structuring through regulatory clearance and financial close with institutional discipline and speed.</p>
+                        <a href="services.html" class="btn-ghost">Learn more <i data-lucide="arrow-right"></i></a>
+                    </article>
+                </div>
+
+                <div class="services-statement reveal">
+                    <p>We are engaged where failure is costly and certainty is non-negotiable.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════ CLIENTS ═══════ -->
+        <section class="clients" aria-labelledby="clients-title">
+            <div class="container">
+                <div class="section-label reveal"><span>Who We Work With</span></div>
+                <h2 class="section-title reveal" id="clients-title">Our <span class="gold-text">Clients</span></h2>
+
+                <div class="clients-grid">
+                    <article class="client-card reveal">
+                        <div class="client-card-icon"><i data-lucide="landmark"></i></div>
+                        <h4>International &amp; Regional DFIs</h4>
+                    </article>
+                    <article class="client-card reveal">
+                        <div class="client-card-icon"><i data-lucide="trending-up"></i></div>
+                        <h4>Global PE &amp; Venture Capital Funds</h4>
+                    </article>
+                    <article class="client-card reveal">
+                        <div class="client-card-icon"><i data-lucide="zap"></i></div>
+                        <h4>Infrastructure &amp; Energy Sponsors</h4>
+                    </article>
+                    <article class="client-card reveal">
+                        <div class="client-card-icon"><i data-lucide="cpu"></i></div>
+                        <h4>Fintech Founders &amp; Boards</h4>
+                    </article>
+                    <article class="client-card reveal">
+                        <div class="client-card-icon"><i data-lucide="wallet"></i></div>
+                        <h4>Family Offices &amp; Institutional Investors</h4>
+                    </article>
+                </div>
+
+                <p class="clients-note reveal">We work directly with decision-makers — investment committees, CFOs, fund principals, founders, and project sponsors.</p>
+            </div>
+        </section>
+
+        <!-- ═══════ PRACTICE AREAS PREVIEW ═══════ -->
+        <section class="practice-preview" id="practice-areas" aria-labelledby="practice-title">
+            <div class="container">
+                <div class="section-label reveal"><span>Practice Areas</span></div>
+                <h2 class="section-title reveal" id="practice-title">Sector <span class="gold-text">Expertise</span></h2>
+                <p class="section-subtitle reveal">Deep, sector-specific expertise across the industries where capital, regulation, and execution intersect.</p>
+
+                <div class="practice-cards">
+                    <a href="practice-areas.html#area-fintech" class="practice-card-link reveal">
+                        <div class="icon-box"><i data-lucide="smartphone"></i></div>
+                        <div>
+                            <h3>Fintech &amp; Financial Services</h3>
+                            <p>Regulatory strategy, licensing, fundraising, M&amp;A, and payments infrastructure for fintech companies and investors.</p>
+                        </div>
+                    </a>
+                    <a href="practice-areas.html#area-energy" class="practice-card-link reveal">
+                        <div class="icon-box"><i data-lucide="flame"></i></div>
+                        <div>
+                            <h3>Energy, Oil &amp; Gas &amp; Transition</h3>
+                            <p>Upstream acquisitions, farm-ins, gas processing JVs, energy transition projects, and operator documentation.</p>
+                        </div>
+                    </a>
+                    <a href="practice-areas.html#area-realestate" class="practice-card-link reveal">
+                        <div class="icon-box"><i data-lucide="building-2"></i></div>
+                        <div>
+                            <h3>Real Estate &amp; Infrastructure</h3>
+                            <p>Development structuring, project finance, PPPs, infrastructure concessions, and investor documentation.</p>
+                        </div>
+                    </a>
+                    <a href="practice-areas.html#area-crossborder" class="practice-card-link reveal">
+                        <div class="icon-box"><i data-lucide="globe"></i></div>
+                        <div>
+                            <h3>Cross-Border &amp; Private Capital</h3>
+                            <p>Investment documentation, co-investment structures, risk allocation, and localization of international standards.</p>
+                        </div>
+                    </a>
+                    <a href="practice-areas.html#area-dataprotection" class="practice-card-link reveal">
+                        <div class="icon-box"><i data-lucide="shield-check"></i></div>
+                        <div>
+                            <h3>Data Protection &amp; Privacy</h3>
+                            <p>Compliance advisory, data protection assessments, privacy frameworks, and regulatory alignment under the NDPA 2023.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div style="text-align:center;margin-top:var(--space-8)">
+                    <a href="practice-areas.html" class="btn btn-outline reveal">
+                        <i data-lucide="layers"></i>
+                        View All Practice Areas
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════ DIFFERENTIATORS ═══════ -->
+        <section class="differentiators" aria-labelledby="diff-title">
+            <div class="container">
+                <div class="section-label reveal"><span>Why Investors Choose Us</span></div>
+                <h2 class="section-title reveal" id="diff-title">The Ardent Fort <span class="gold-text">Advantage</span></h2>
+
+                <div class="diff-grid">
+                    <article class="diff-card reveal">
+                        <i data-lucide="crosshair"></i>
+                        <h4>Deep Sector Focus</h4>
+                        <p>Fintech, energy, real estate, infrastructure, and data protection</p>
+                    </article>
+                    <article class="diff-card reveal">
+                        <i data-lucide="file-check"></i>
+                        <h4>Regulatory Fluency</h4>
+                        <p>Compliance confidence across all sectors</p>
+                    </article>
+                    <article class="diff-card reveal">
+                        <i data-lucide="gauge"></i>
+                        <h4>Execution-First</h4>
+                        <p>Institutional discipline, not BigLaw inefficiency</p>
+                    </article>
+                    <article class="diff-card reveal">
+                        <i data-lucide="crown"></i>
+                        <h4>Senior Attention</h4>
+                        <p>Direct partner involvement on every deal</p>
+                    </article>
+                    <article class="diff-card reveal">
+                        <i data-lucide="list-checks"></i>
+                        <h4>Predictable Process</h4>
+                        <p>Clear, transaction-aligned execution</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════ TESTIMONIALS ═══════ -->
+        <section class="testimonials" aria-labelledby="testimonials-title">
+            <div class="container">
+                <div class="section-label centered reveal"><span>Client Testimonials</span></div>
+                <h2 class="section-title reveal" id="testimonials-title" style="text-align:center">What Our <span class="gold-text">Clients</span> Say</h2>
+
+                <div class="testimonials-grid">
+                    <article class="testimonial-card reveal">
+                        <div class="testimonial-quote">"</div>
+                        <blockquote>Ardent Fort brought the regulatory clarity we needed to close a complex cross-border energy transaction. Their execution discipline and deep understanding of the Nigerian regulatory landscape were invaluable.</blockquote>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">AO</div>
+                            <div>
+                                <div class="testimonial-name">A. Okonkwo</div>
+                                <div class="testimonial-role">Director, International DFI</div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="testimonial-card reveal">
+                        <div class="testimonial-quote">"</div>
+                        <blockquote>What sets Ardent Fort apart is their singular focus on getting deals done. They structure backward from approvals and funding — exactly what our fund needed for our Nigeria portfolio.</blockquote>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">EM</div>
+                            <div>
+                                <div class="testimonial-name">E. Mensah</div>
+                                <div class="testimonial-role">Partner, West Africa PE Fund</div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="testimonial-card reveal">
+                        <div class="testimonial-quote">"</div>
+                        <blockquote>As a fintech founder navigating CBN licensing, Ardent Fort was the only firm that understood both the regulatory requirements and the urgency of our growth timeline. They delivered with precision.</blockquote>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">IF</div>
+                            <div>
+                                <div class="testimonial-name">I. Fashola</div>
+                                <div class="testimonial-role">CEO, Lagos Fintech Startup</div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════ CONTACT PREVIEW ═══════ -->
+        <section class="contact-preview" id="contact" aria-labelledby="contact-title">
+            <div class="container">
+                <div class="section-label centered reveal"><span>Get in Touch</span></div>
+                <h2 class="section-title reveal" id="contact-title" style="text-align:center">Let's <span class="gold-text">Talk</span></h2>
+                <p class="section-subtitle reveal" style="text-align:center;margin:0 auto var(--space-8)">If you are deploying capital, executing regulated transactions, or navigating approval complexity — Ardent Fort Law is your partner for certainty, speed, and compliance.</p>
+
+                <div class="contact-grid">
+                    <div class="contact-form-card reveal">
+                        <form class="contact-form" id="contactForm" action="https://formsubmit.co/info@ardentfortlaw.com" method="POST" aria-label="Contact form">
+                            <input type="hidden" name="_subject" value="New inquiry from Ardent Fort Law website">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_next" value="https://www.ardentfortlaw.com/#contact">
+                            <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+                            <input type="hidden" name="g-recaptcha-response" id="recaptchaResponse">
+
+                            <div class="form-row">
+                                <div class="form-field">
+                                    <label for="name">Full Name</label>
+                                    <input type="text" id="name" name="name" placeholder="John Doe" required autocomplete="name">
+                                </div>
+                                <div class="form-field">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" placeholder="john@example.com" required autocomplete="email">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-field">
+                                    <label for="organization">Organization</label>
+                                    <input type="text" id="organization" name="organization" placeholder="Company name" autocomplete="organization">
+                                </div>
+                                <div class="form-field">
+                                    <label for="inquiry">Inquiry Type</label>
+                                    <select id="inquiry" name="inquiry_type">
+                                        <option value="">Select type...</option>
+                                        <option value="fintech">Fintech Transaction</option>
+                                        <option value="energy">Energy / Oil &amp; Gas</option>
+                                        <option value="real-estate">Real Estate / Infrastructure</option>
+                                        <option value="cross-border">Cross-Border Investment</option>
+                                        <option value="data-protection">Data Protection</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-field">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Tell us about your transaction or inquiry..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">
+                                <i data-lucide="send"></i>
+                                Submit Inquiry
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="contact-info-cards">
+                        <div class="info-card reveal">
+                            <div class="icon-box sm"><i data-lucide="mail"></i></div>
+                            <div>
+                                <h4>Email</h4>
+                                <p><a href="mailto:info@ardentfortlaw.com">info@ardentfortlaw.com</a></p>
+                            </div>
+                        </div>
+                        <div class="info-card reveal">
+                            <div class="icon-box sm"><i data-lucide="map-pin"></i></div>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Lagos, Nigeria</p>
+                            </div>
+                        </div>
+                        <div class="info-card reveal">
+                            <div class="icon-box sm"><i data-lucide="clock"></i></div>
+                            <div>
+                                <h4>Response Time</h4>
+                                <p>All inquiries within 24 hours</p>
+                            </div>
+                        </div>
+                        <div class="info-card reveal">
+                            <div class="icon-box sm"><i data-lucide="shield"></i></div>
+                            <div>
+                                <h4>Confidentiality</h4>
+                                <p>All communications are privileged and confidential</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════ NEWSLETTER ═══════ -->
+        <section class="newsletter" aria-label="Newsletter signup">
+            <div class="container">
+                <div class="newsletter-inner reveal">
+                    <h3>Stay Informed</h3>
+                    <p>Receive insights on regulatory developments, transaction trends, and investment opportunities across Nigeria and emerging markets.</p>
+                    <form class="newsletter-form" aria-label="Newsletter subscription">
+                        <input type="email" placeholder="Enter your email address" required aria-label="Email address">
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                    <p class="newsletter-disclaimer">We respect your privacy. Unsubscribe at any time.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ═══════ FOOTER ═══════ -->
+    <footer class="footer" role="contentinfo">
         <div class="container">
-            <div class="section-header">
-                <div class="section-ornament"></div>
-                <h2 class="section-title">What We Do</h2>
-                <div class="section-ornament"></div>
-            </div>
-            
-            <p class="section-intro">We act as execution counsel on transactions involving regulatory complexity, cross-border capital flows, multi-party risk allocation, large-ticket deals and tight timelines.</p>
-            
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="card-corner tl"></div>
-                    <div class="card-corner tr"></div>
-                    <div class="card-corner bl"></div>
-                    <div class="card-corner br"></div>
-                    
-                    <div class="service-icon">⚖</div>
-                    <h3>Transaction Structuring</h3>
-                    <p>Structuring transactions that align commercial, regulatory, and funding requirements</p>
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="logo.png" alt="Ardent Fort Law" width="60" height="60" loading="lazy">
+                    <p>Transaction Counsel for Regulated, Capital-Intensive, and Cross-Border Deals across Nigeria and emerging markets.</p>
                 </div>
-                
-                <div class="service-card">
-                    <div class="card-corner tl"></div>
-                    <div class="card-corner tr"></div>
-                    <div class="card-corner bl"></div>
-                    <div class="card-corner br"></div>
-                    
-                    <div class="service-icon">◈</div>
-                    <h3>Regulatory De-Risking</h3>
-                    <p>Anticipating approval, licensing, and compliance risk before they become obstacles</p>
-                </div>
-                
-                <div class="service-card">
-                    <div class="card-corner tl"></div>
-                    <div class="card-corner tr"></div>
-                    <div class="card-corner bl"></div>
-                    <div class="card-corner br"></div>
-                    
-                    <div class="service-icon">♔</div>
-                    <h3>Execution Through Close</h3>
-                    <p>Driving transactions from structuring through regulatory clearance and financial close</p>
-                </div>
-            </div>
-
-            <div class="engagement-statement">
-                <p>We are engaged where failure is costly and certainty is non-negotiable.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Who We Work With -->
-    <section class="clients">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-ornament light"></div>
-                <h2 class="section-title light">Who We Work With</h2>
-                <div class="section-ornament light"></div>
-            </div>
-            
-            <div class="clients-grid">
-                <div class="client-type">
-                    <div class="client-icon">♕</div>
-                    <h3>International & Regional DFIs</h3>
-                </div>
-                <div class="client-type">
-                    <div class="client-icon">♖</div>
-                    <h3>Global Private Equity & Venture Capital Funds</h3>
-                </div>
-                <div class="client-type">
-                    <div class="client-icon">♗</div>
-                    <h3>Infrastructure & Energy Sponsors</h3>
-                </div>
-                <div class="client-type">
-                    <div class="client-icon">♘</div>
-                    <h3>Fintech Founders & Boards</h3>
-                </div>
-                <div class="client-type">
-                    <div class="client-icon">♙</div>
-                    <h3>Family Offices & Institutional Investors</h3>
-                </div>
-            </div>
-            
-            <p class="clients-note">We work directly with decision-makers—investment committees, CFOs, fund principals, founders, and project sponsors.</p>
-        </div>
-    </section>
-
-    <!-- Practice Areas -->
-    <section id="practice-areas" class="practice-areas">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-ornament"></div>
-                <h2 class="section-title">Practice Areas</h2>
-                <div class="section-ornament"></div>
-            </div>
-            
-            <div class="practice-accordion">
-                <!-- Fintech -->
-                <div class="practice-item">
-                    <div class="practice-header">
-                        <h3>Fintech & Financial Services Transactions</h3>
-                        <span class="practice-toggle">✦</span>
-                    </div>
-                    <div class="practice-content">
-                        <p class="practice-intro">We advise fintech companies, investors, and financial institutions on regulated financial services transactions in emerging markets.</p>
-                        <ul class="practice-list">
-                            <li>Fintech structuring and regulatory strategy</li>
-                            <li>Licensing and engagement with financial regulators (e.g., CBN, SEC)</li>
-                            <li>Venture capital, growth-stage, and strategic fundraising</li>
-                            <li>M&A, strategic investments, and partnerships</li>
-                            <li>Payments, digital banking, lending, and financial infrastructure arrangements</li>
-                        </ul>
-                        <p class="practice-tagline">We help founders and investors navigate regulation without slowing growth.</p>
-                    </div>
-                </div>
-
-                <!-- Energy -->
-                <div class="practice-item">
-                    <div class="practice-header">
-                        <h3>Energy, Oil & Gas & Energy Transition</h3>
-                        <span class="practice-toggle">✦</span>
-                    </div>
-                    <div class="practice-content">
-                        <p class="practice-intro">We advise international and local sponsors on energy and natural resources transactions, with a strong focus on regulatory alignment and execution.</p>
-                        <ul class="practice-list">
-                            <li>Upstream acquisitions, divestments, and asset transfers</li>
-                            <li>Farm-in and farm-out transactions</li>
-                            <li>Gas processing, midstream, and energy infrastructure JVs</li>
-                            <li>Gas-to-power and energy transition projects</li>
-                            <li>Operator, investor, and lender documentation</li>
-                        </ul>
-                        <p class="practice-tagline">We support transactions from conception through regulatory approvals and financial close.</p>
-                    </div>
-                </div>
-
-                <!-- Real Estate -->
-                <div class="practice-item">
-                    <div class="practice-header">
-                        <h3>Real Estate & Infrastructure Transactions</h3>
-                        <span class="practice-toggle">✦</span>
-                    </div>
-                    <div class="practice-content">
-                        <p class="practice-intro">We act as transaction counsel on capital deployment into real assets and infrastructure.</p>
-                        <ul class="practice-list">
-                            <li>Real estate development structuring and SPVs</li>
-                            <li>Project finance and construction-linked financing</li>
-                            <li>Private debt and equity raises</li>
-                            <li>Infrastructure concessions, PPPs, and structured investments</li>
-                            <li>Investor, sponsor, and contractor documentation</li>
-                        </ul>
-                        <p class="practice-tagline">We structure transactions to meet both investor protection standards and local execution realities.</p>
-                    </div>
-                </div>
-
-                <!-- Cross-Border -->
-                <div class="practice-item">
-                    <div class="practice-header">
-                        <h3>Cross-Border & Private Capital Structuring</h3>
-                        <span class="practice-toggle">✦</span>
-                    </div>
-                    <div class="practice-content">
-                        <p class="practice-intro">We regularly advise DFIs, PE funds, and institutional investors on cross-border and multi-jurisdictional transactions.</p>
-                        <ul class="practice-list">
-                            <li>Equity and debt investment documentation</li>
-                            <li>Co-investment and syndication structures</li>
-                            <li>Risk allocation, governance, and exit planning</li>
-                            <li>Localization of international transaction standards</li>
-                        </ul>
-                        <p class="practice-tagline">Our work bridges global investment expectations with local regulatory realities.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Nigeria -->
-    <section id="why-nigeria" class="why-nigeria">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-ornament light"></div>
-                <h2 class="section-title light">Why Nigeria & Emerging Markets</h2>
-                <div class="section-ornament light"></div>
-            </div>
-            
-            <div class="why-grid">
-                <div class="why-block">
-                    <h3>Opportunity at Scale</h3>
-                    <p>Nigeria and other emerging markets offer some of the largest, under-penetrated investment opportunities in the world, particularly in Fintech, Energy, Real Estate, and Infrastructure.</p>
-                    
-                    <div class="stats-grid">
-                        <div class="stat-item">
-                            <div class="stat-icon">♔</div>
-                            <h4>220M+</h4>
-                            <p>Population creating strong demand</p>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-icon">♕</div>
-                            <h4>Underserved</h4>
-                            <p>First-mover advantages</p>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-icon">♖</div>
-                            <h4>Rich Resources</h4>
-                            <p>Oil, gas & renewable energy</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="why-block">
-                    <h3>Strategic Advantages for Investors</h3>
-                    <ul class="advantages-list">
-                        <li><span class="list-ornament">◆</span> <strong>High Risk-Adjusted Returns:</strong> Well-structured deals offer returns significantly higher than mature markets</li>
-                        <li><span class="list-ornament">◆</span> <strong>Regulatory Modernization:</strong> New laws and licensing frameworks increase investor protection</li>
-                        <li><span class="list-ornament">◆</span> <strong>DFI & Government Support:</strong> Many transactions are backed or de-risked by development finance institutions</li>
-                    </ul>
-                </div>
-
-                <div class="why-block ardent-value">
-                    <h3>Why Ardent Fort Law Adds Value</h3>
-                    <p>Investors face common pitfalls: regulatory uncertainty, licensing delays, and documentation bottlenecks. We bridge that gap:</p>
-                    
-                    <div class="value-grid">
-                        <div class="value-item">
-                            <div class="value-number">I</div>
-                            <h4>Fluent Navigation</h4>
-                            <p>Energy, fintech, real estate, and infrastructure approvals</p>
-                        </div>
-                        <div class="value-item">
-                            <div class="value-number">II</div>
-                            <h4>Execution-First</h4>
-                            <p>From commitment to financial close with certainty</p>
-                        </div>
-                        <div class="value-item">
-                            <div class="value-number">III</div>
-                            <h4>Cross-Border Alignment</h4>
-                            <p>International capital meets local laws</p>
-                        </div>
-                        <div class="value-item">
-                            <div class="value-number">IV</div>
-                            <h4>Selective Focus</h4>
-                            <p>High-impact, executable transactions</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="bottom-line">
-                <div class="bottom-line-border"></div>
-                <p><strong>Investing in emerging markets is not speculative when structured and executed properly.</strong><br>Ardent Fort Law ensures capital moves confidently.</p>
-                <div class="bottom-line-border"></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-ornament"></div>
-                <h2 class="section-title">About Ardent Fort</h2>
-                <div class="section-ornament"></div>
-            </div>
-            
-            <div class="about-grid">
-                <div class="about-block">
-                    <h3>Our Mission</h3>
-                    <p class="mission-text">To enable the efficient and compliant deployment of capital into regulated and capital-intensive sectors by reducing legal, regulatory, and execution risk across emerging markets.</p>
-                    <div class="mission-focus">
-                        <span class="focus-ornament">◆</span>
-                        <p>Our focus is singular: Ensure viable transactions close—efficiently, compliantly, and at scale.</p>
-                        <span class="focus-ornament">◆</span>
-                    </div>
-                </div>
-
-                <div class="about-block">
-                    <h3>Our Philosophy</h3>
-                    <p>In emerging and regulated markets, legal work must do more than advise—it must enable execution.</p>
-                    <p><strong>Ardent Fort Law was built on the understanding that:</strong></p>
-                    <ul class="philosophy-list">
-                        <li><span class="list-mark">✦</span> Capital requires regulatory confidence</li>
-                        <li><span class="list-mark">✦</span> Transactions require disciplined structuring</li>
-                        <li><span class="list-mark">✦</span> Speed must not compromise compliance</li>
-                    </ul>
-                    <p><strong>Accordingly, we:</strong></p>
-                    <ul class="philosophy-list">
-                        <li><span class="list-mark">◆</span> Structure backward from approvals and funding requirements</li>
-                        <li><span class="list-mark">◆</span> Align legal architecture with commercial objectives</li>
-                        <li><span class="list-mark">◆</span> Apply repeatable, execution-driven frameworks</li>
-                        <li><span class="list-mark">◆</span> Prioritize clarity, speed, and certainty</li>
-                    </ul>
-                </div>
-
-                <div class="about-block">
-                    <h3>How We Work</h3>
-                    <p>We operate as an extension of our clients' deal and investment teams.</p>
-                    <p><strong>Our engagements are characterized by:</strong></p>
-                    <ul class="philosophy-list">
-                        <li><span class="list-mark">♔</span> Early involvement at structuring and strategy stage</li>
-                        <li><span class="list-mark">♕</span> Direct engagement with all stakeholders</li>
-                        <li><span class="list-mark">♖</span> Senior oversight on material transactions</li>
-                        <li><span class="list-mark">♗</span> Clear execution timelines and accountability</li>
-                    </ul>
-                    <div class="fee-statement">
-                        <p>Our fee structures are aligned with outcomes, not hours.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="statement-box">
-                <div class="statement-border"></div>
-                <p>We are not a volume-driven law firm.<br>We are a transaction execution partner.</p>
-                <div class="statement-border"></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Ardent Fort -->
-    <section class="why-ardent">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-ornament light"></div>
-                <h2 class="section-title light">Why Investors Choose Ardent Fort</h2>
-                <div class="section-ornament light"></div>
-            </div>
-            
-            <div class="differentiators">
-                <div class="diff-item">
-                    <div class="diff-icon">♔</div>
-                    <h3>Deep Sector Focus</h3>
-                    <p>Fintech, energy, and real estate/infrastructure</p>
-                </div>
-                <div class="diff-item">
-                    <div class="diff-icon">♕</div>
-                    <h3>Regulatory Fluency</h3>
-                    <p>Compliance confidence across all sectors</p>
-                </div>
-                <div class="diff-item">
-                    <div class="diff-icon">♖</div>
-                    <h3>Execution-First Mindset</h3>
-                    <p>Institutional discipline without BigLaw inefficiency</p>
-                </div>
-                <div class="diff-item">
-                    <div class="diff-icon">♗</div>
-                    <h3>Senior Attention</h3>
-                    <p>Direct partner involvement on every transaction</p>
-                </div>
-                <div class="diff-item">
-                    <div class="diff-icon">♘</div>
-                    <h3>Predictable Processes</h3>
-                    <p>Clear, transaction-aligned execution</p>
-                </div>
-            </div>
-
-            <div class="criteria-pricing">
-                <div class="criteria-block">
-                    <h3>Engagement Criteria</h3>
+                <div class="footer-col">
+                    <h5>Navigation</h5>
                     <ul>
-                        <li><span class="criteria-mark">◆</span> Institutional, sponsor-led, or investor-backed transactions</li>
-                        <li><span class="criteria-mark">◆</span> Clearly defined commercial or growth mandates</li>
-                        <li><span class="criteria-mark">◆</span> Capital-intensive or regulated projects</li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="investment.html">Investment</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
                     </ul>
                 </div>
-
-                <div class="pricing-block">
-                    <h3>Pricing Philosophy</h3>
+                <div class="footer-col">
+                    <h5>Practice Areas</h5>
                     <ul>
-                        <li><span class="criteria-mark">◆</span> Flat transaction fees</li>
-                        <li><span class="criteria-mark">◆</span> Success-linked or hybrid arrangements</li>
-                        <li><span class="criteria-mark">◆</span> Aligned with client outcomes, not hours worked</li>
+                        <li><a href="practice-areas.html#area-fintech">Fintech &amp; Financial Services</a></li>
+                        <li><a href="practice-areas.html#area-energy">Energy, Oil &amp; Gas</a></li>
+                        <li><a href="practice-areas.html#area-realestate">Real Estate &amp; Infrastructure</a></li>
+                        <li><a href="practice-areas.html#area-crossborder">Cross-Border Capital</a></li>
+                        <li><a href="practice-areas.html#area-dataprotection">Data Protection</a></li>
                     </ul>
                 </div>
-            </div>
-
-            <div class="final-statement">
-                <p>We are built for transactions that cannot afford uncertainty.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-ornament"></div>
-                <h2 class="section-title">Let's Talk</h2>
-                <div class="section-ornament"></div>
-            </div>
-            
-            <p class="contact-intro">If you are deploying capital into fintech, energy, oil & gas, real estate, or infrastructure—executing regulated or cross-border transactions—or navigating approval, licensing, or execution complexity, Ardent Fort Law is your partner for certainty, speed, and compliance.</p>
-            
-            <div class="contact-grid">
-                <div class="contact-form-wrapper">
-                    <form class="contact-form" id="contactForm" action="https://formsubmit.co/info@ardentfortlaw.com" method="POST">
-                        <!-- Security Features -->
-                        <input type="hidden" name="_subject" value="New inquiry from Ardent Fort Law website">
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_template" value="table">
-                        <input type="hidden" name="_next" value="https://www.ardentfortlaw.com/#contact">
-                        <input type="text" name="_honey" style="display:none">
-                        <input type="hidden" name="g-recaptcha-response" id="recaptchaResponse">
-                        
-                        <div class="form-group">
-                            <input type="text" name="name" placeholder="Full Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" name="email" placeholder="Email Address" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" name="organization" placeholder="Organization">
-                        </div>
-                        <div class="form-group">
-                            <select name="inquiry_type">
-                                <option value="">Type of Inquiry</option>
-                                <option value="fintech">Fintech Transaction</option>
-                                <option value="energy">Energy/Oil & Gas</option>
-                                <option value="real-estate">Real Estate/Infrastructure</option>
-                                <option value="cross-border">Cross-Border Investment</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <textarea name="message" rows="5" placeholder="Tell us about your transaction or inquiry" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit Inquiry</button>
+                <div class="footer-col footer-newsletter">
+                    <h5>Stay Updated</h5>
+                    <p>Legal insights and transaction trends delivered to your inbox.</p>
+                    <form class="footer-newsletter-form" aria-label="Footer newsletter">
+                        <input type="email" placeholder="Your email" required aria-label="Email address">
+                        <button type="submit">Go</button>
                     </form>
                 </div>
-
-                <div class="contact-info">
-                    <div class="contact-detail">
-                        <div class="detail-icon">♔</div>
-                        <h4>Email</h4>
-                        <p><a href="mailto:info@ardentfortlaw.com" style="color: var(--gold); text-decoration: none;">info@ardentfortlaw.com</a></p>
-                    </div>
-                    <div class="contact-detail">
-                        <div class="detail-icon">♕</div>
-                        <h4>Location</h4>
-                        <p>Lagos, Nigeria</p>
-                    </div>
-                    <div class="contact-detail">
-                        <div class="detail-icon">♖</div>
-                        <h4>Response Time</h4>
-                        <p>We respond to all inquiries within 24 hours</p>
-                    </div>
-                </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-ornament"></div>
-            
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <div class="footer-logo">
-                        <img src="logo.png" alt="Ardent Fort Law" class="footer-logo-image">
-                    </div>
-                    <p>Transaction Counsel for Regulated, Capital-Intensive, and Cross-Border Deals</p>
-                </div>
-                
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#practice-areas">Practice Areas</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-contact">
-                    <h4>Contact</h4>
-                    <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="4e272028210e2f3c2a2b203a28213c3a222f39602d2123">[email&#160;protected]</a></p>
-                    <p>Lagos, Nigeria</p>
-                </div>
-            </div>
-            
-            <div class="footer-ornament"></div>
-            
             <div class="footer-bottom">
                 <p>&copy; 2026 Ardent Fort Law. All rights reserved.</p>
-                <p class="disclaimer">This website is for informational purposes only and does not constitute legal advice.</p>
-                <p class="disclaimer">This site is protected by reCAPTCHA and the Google 
-                    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" style="color: var(--gold);">Privacy Policy</a> and 
-                    <a href="https://policies.google.com/terms" target="_blank" rel="noopener" style="color: var(--gold);">Terms of Service</a> apply.
-                </p>
+                <div class="footer-bottom-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+                <p>Protected by reCAPTCHA · <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Privacy</a> · <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer">Terms</a></p>
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- ═══════ WHATSAPP ═══════ -->
+    <a href="https://wa.me/2348000000000" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <i data-lucide="message-circle"></i>
+        <span class="whatsapp-tooltip">Chat with us</span>
+    </a>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

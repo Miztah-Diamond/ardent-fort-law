@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Nigeria &amp; Emerging Markets | Ardent Fort Law</title>
+    <meta name="description" content="Discover why Nigeria and emerging markets present compelling investment opportunities. Ardent Fort Law provides legal guidance for cross-border capital deployment.">
+    <link rel="canonical" href="https://www.ardentfortlaw.com/investment.html">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Why Nigeria & Emerging Markets | Ardent Fort Law">
+    <meta property="og:description" content="Discover why Nigeria and emerging markets present compelling investment opportunities. Ardent Fort Law provides legal guidance for cross-border capital deployment.">
+    <meta property="og:url" content="https://www.ardentfortlaw.com/investment.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.ardentfortlaw.com/logo.png">
+    <meta property="og:site_name" content="Ardent Fort Law">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Why Nigeria & Emerging Markets | Ardent Fort Law">
+    <meta name="twitter:description" content="Discover why Nigeria and emerging markets present compelling investment opportunities. Ardent Fort Law provides legal guidance for cross-border capital deployment.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Why Nigeria & Emerging Markets",
+        "description": "Investment opportunities in Nigeria and emerging markets with legal support from Ardent Fort Law.",
+        "url": "https://ardentfortlaw.com/investment.html",
+        "publisher": {
+            "@type": "LegalService",
+            "name": "Ardent Fort Law",
+            "url": "https://ardentfortlaw.com"
+        },
+        "about": {
+            "@type": "Thing",
+            "name": "Emerging Market Investment",
+            "description": "Strategic investment opportunities in Nigeria and other emerging markets"
+        }
+    }
+    </script>
+
+    <!-- Page-Specific Styles -->
+    <style>
+        /* ── Stats Row ── */
+        .stats-row {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--space-8);
+            margin-top: var(--space-12);
+        }
+
+        .stat-card {
+            text-align: center;
+            padding: var(--space-10);
+            border: 1px solid var(--border-subtle);
+            background: var(--bg-card);
+            position: relative;
+            overflow: hidden;
+            transition: all var(--duration-base) var(--ease-out-quart);
+        }
+
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 2px;
+            background: var(--gold-gradient);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform var(--duration-slow) var(--ease-out-expo);
+        }
+
+        .stat-card:hover::before { transform: scaleX(1); }
+
+        .stat-card:hover {
+            border-color: var(--border-light);
+            transform: translateY(-4px);
+            box-shadow: var(--gold-glow);
+        }
+
+        .stat-card .icon-box {
+            margin: 0 auto var(--space-6);
+        }
+
+        .stat-number {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 700;
+            background: var(--gold-gradient-text);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: 0.02em;
+            line-height: 1.2;
+            margin-bottom: var(--space-2);
+        }
+
+        .stat-label {
+            font-family: var(--font-ui);
+            font-size: 0.82rem;
+            font-weight: 500;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: var(--space-3);
+        }
+
+        .stat-card p:last-child {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        /* ── Advantages List ── */
+        .advantages-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-6);
+            margin-top: var(--space-10);
+            max-width: 800px;
+        }
+
+        .advantages-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--space-5);
+            padding: var(--space-6);
+            border: 1px solid var(--border-subtle);
+            background: var(--bg-card);
+            transition: all var(--duration-base) var(--ease-out-quart);
+        }
+
+        .advantages-list li:hover {
+            border-color: var(--border-light);
+            transform: translateX(4px);
+        }
+
+        .advantages-list .adv-icon {
+            flex-shrink: 0;
+            color: var(--gold-400);
+            margin-top: 2px;
+        }
+
+        .advantages-list .adv-icon i {
+            width: 22px;
+            height: 22px;
+        }
+
+        .advantages-list h4 {
+            font-size: 1.05rem;
+            margin-bottom: var(--space-2);
+        }
+
+        .advantages-list p {
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        /* ── Value Grid ── */
+        .value-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--space-8);
+            margin-top: var(--space-12);
+        }
+
+        .value-item {
+            text-align: center;
+            padding: var(--space-10);
+            border: 1px solid var(--border-subtle);
+            background: var(--bg-card);
+            transition: all var(--duration-base) var(--ease-out-quart);
+        }
+
+        .value-item:hover {
+            border-color: var(--border-light);
+            transform: translateY(-4px);
+            box-shadow: var(--gold-glow);
+        }
+
+        .value-numeral {
+            font-family: var(--font-display);
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--gold-400);
+            letter-spacing: 0.1em;
+            margin-bottom: var(--space-4);
+            opacity: 0.6;
+        }
+
+        .value-item h4 {
+            font-size: 1.15rem;
+            margin-bottom: var(--space-3);
+        }
+
+        .value-item p {
+            font-size: 0.95rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+        }
+
+        /* ── Investment Callout ── */
+        .investment-callout {
+            margin: var(--space-16) 0;
+        }
+
+        /* ── CTA Section ── */
+        .cta-section {
+            padding: var(--section-padding) 0;
+            text-align: center;
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border-subtle);
+        }
+
+        .cta-section h2 {
+            margin-bottom: var(--space-6);
+        }
+
+        .cta-section p {
+            max-width: 600px;
+            margin: 0 auto var(--space-10);
+        }
+
+        /* ── Content Sections ── */
+        .content-section {
+            padding: var(--section-padding) 0;
+        }
+
+        .content-section + .content-section {
+            border-top: 1px solid var(--border-subtle);
+        }
+
+        /* ── Responsive ── */
+        @media (max-width: 1024px) {
+            .stats-row { grid-template-columns: 1fr; gap: var(--space-6); }
+            .value-grid { grid-template-columns: 1fr; }
+        }
+
+        @media (max-width: 768px) {
+            .advantages-list li {
+                flex-direction: column;
+                gap: var(--space-3);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation -->
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <div class="nav-inner">
+                <a href="index.html" class="nav-logo" aria-label="Ardent Fort Law — Home">
+                    <img src="logo.png" alt="Ardent Fort Law" width="48" height="48">
+                    <div class="nav-logo-text">
+                        <span class="nav-logo-name">Ardent Fort Law</span>
+                        <span class="nav-logo-sub">Counsel &amp; Advisory</span>
+                    </div>
+                </a>
+
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="practice-areas.html">Practice Areas</a></li>
+                    <li><a href="investment.html" class="active">Investment</a></li>
+                    <li><a href="contact.html" class="nav-cta">Contact</a></li>
+                </ul>
+
+                <div class="nav-right">
+                    <button class="theme-toggle" aria-label="Toggle theme">
+                        <i data-lucide="sun" class="icon-sun"></i>
+                        <i data-lucide="moon" class="icon-moon"></i>
+                    </button>
+                    <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobile navigation" aria-hidden="true">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="practice-areas.html">Practice Areas</a>
+        <a href="investment.html">Investment</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+    </div>
+
+    <!-- Main Content -->
+    <main id="main-content">
+
+        <!-- Page Hero -->
+        <section class="page-hero" aria-labelledby="page-title">
+            <div class="container">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span class="separator" aria-hidden="true">/</span>
+                    <span aria-current="page">Investment</span>
+                </nav>
+                <span class="section-label">Why Nigeria &amp; Emerging Markets</span>
+                <h1 id="page-title">Opportunity at <span class="gold-text">Scale</span></h1>
+                <p class="page-description">Africa's largest economy offers investors a rare combination of demographic momentum, resource abundance, and structural reform -- the question is not whether to invest, but how to do it well.</p>
+            </div>
+        </section>
+
+        <!-- Market Fundamentals -->
+        <section class="content-section" aria-labelledby="fundamentals-title">
+            <div class="container">
+                <span class="section-label reveal">Market Fundamentals</span>
+                <h2 id="fundamentals-title" class="section-title reveal">The <span class="gold-text">Numbers</span> Speak</h2>
+                <p class="section-subtitle reveal">Nigeria sits at the intersection of scale, need, and reform. For investors who understand the terrain, the opportunity is structural, not speculative.</p>
+
+                <div class="stats-row">
+                    <div class="stat-card reveal" role="figure" aria-label="Population statistic">
+                        <div class="icon-box">
+                            <i data-lucide="users" aria-hidden="true"></i>
+                        </div>
+                        <div class="stat-number">220M+</div>
+                        <div class="stat-label">Population</div>
+                        <p>Africa's most populous nation, with a median age under 20 and rapidly urbanizing consumer base.</p>
+                    </div>
+                    <div class="stat-card reveal" role="figure" aria-label="Underserved markets statistic">
+                        <div class="icon-box">
+                            <i data-lucide="rocket" aria-hidden="true"></i>
+                        </div>
+                        <div class="stat-number">80%</div>
+                        <div class="stat-label">Underserved Markets</div>
+                        <p>Critical sectors -- fintech, healthcare, agritech, housing -- remain fundamentally underserved, creating outsized entry points.</p>
+                    </div>
+                    <div class="stat-card reveal" role="figure" aria-label="Natural resources statistic">
+                        <div class="icon-box">
+                            <i data-lucide="droplets" aria-hidden="true"></i>
+                        </div>
+                        <div class="stat-number">$500B+</div>
+                        <div class="stat-label">Rich Resources</div>
+                        <p>Vast reserves of oil, gas, solid minerals, and arable land underpin a resource economy with diversification potential.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Strategic Advantages -->
+        <section class="content-section" aria-labelledby="advantages-title">
+            <div class="container">
+                <span class="section-label reveal">Strategic Positioning</span>
+                <h2 id="advantages-title" class="section-title reveal">Advantages for <span class="gold-text">Investors</span></h2>
+                <p class="section-subtitle reveal">Beyond the headline numbers, Nigeria offers structural advantages that sophisticated investors increasingly recognize.</p>
+
+                <ul class="advantages-list" role="list">
+                    <li class="reveal">
+                        <span class="adv-icon" aria-hidden="true"><i data-lucide="check-circle"></i></span>
+                        <div>
+                            <h4>High Risk-Adjusted Returns</h4>
+                            <p>When structured with proper legal frameworks, Nigerian investments consistently deliver returns that outperform comparable emerging-market benchmarks -- particularly in private credit, real estate, and technology.</p>
+                        </div>
+                    </li>
+                    <li class="reveal">
+                        <span class="adv-icon" aria-hidden="true"><i data-lucide="check-circle"></i></span>
+                        <div>
+                            <h4>Regulatory Modernization</h4>
+                            <p>The SEC, CBN, and FIRS have introduced reforms that improve transparency, enforce contractual certainty, and attract foreign direct investment through clearer regulatory pathways.</p>
+                        </div>
+                    </li>
+                    <li class="reveal">
+                        <span class="adv-icon" aria-hidden="true"><i data-lucide="check-circle"></i></span>
+                        <div>
+                            <h4>Development Finance Institution (DFI) Support</h4>
+                            <p>Multilateral institutions -- IFC, AfDB, DFC -- are actively deploying capital into Nigeria, providing co-investment opportunities and de-risking mechanisms for private investors.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Why Ardent Fort Adds Value -->
+        <section class="content-section" aria-labelledby="value-title">
+            <div class="container">
+                <span class="section-label centered reveal">Our Role</span>
+                <h2 id="value-title" class="section-title reveal" style="text-align: center;">Why Ardent Fort <span class="gold-text">Adds Value</span></h2>
+                <p class="section-subtitle reveal" style="text-align: center; margin: 0 auto var(--space-4);">Capital without counsel is exposure. We ensure your investment thesis is matched by legal precision at every stage.</p>
+
+                <div class="value-grid">
+                    <div class="value-item reveal">
+                        <div class="value-numeral">I</div>
+                        <h4>Fluent Navigation</h4>
+                        <p>We understand the regulatory landscape -- from NIPC incentives to CAMA compliance -- and translate complexity into clear, actionable guidance for foreign and domestic investors.</p>
+                    </div>
+                    <div class="value-item reveal">
+                        <div class="value-numeral">II</div>
+                        <h4>Execution-First</h4>
+                        <p>Our approach prioritizes deal momentum. We draft, negotiate, and close -- moving at the speed of commercial opportunity without sacrificing legal rigour.</p>
+                    </div>
+                    <div class="value-item reveal">
+                        <div class="value-numeral">III</div>
+                        <h4>Cross-Border Alignment</h4>
+                        <p>We coordinate with international counsel to align Nigerian legal structures with the requirements of foreign jurisdictions, tax treaties, and institutional LP mandates.</p>
+                    </div>
+                    <div class="value-item reveal">
+                        <div class="value-numeral">IV</div>
+                        <h4>Selective Focus</h4>
+                        <p>We take fewer mandates and invest more attention. Every engagement receives partner-level involvement from origination through post-closing compliance.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Investment Callout -->
+        <section class="content-section" aria-labelledby="callout-heading">
+            <div class="container">
+                <div class="callout investment-callout reveal">
+                    <p id="callout-heading">Investing in emerging markets is not speculative when structured properly. Ardent Fort Law ensures capital moves confidently.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section" aria-labelledby="cta-title">
+            <div class="container">
+                <span class="section-label centered reveal">Next Step</span>
+                <h2 id="cta-title" class="reveal">Deploy Capital with <span class="gold-text">Confidence</span></h2>
+                <p class="reveal">Whether you are structuring a first entry or scaling an existing portfolio, we provide the legal framework to move decisively.</p>
+                <a href="contact.html" class="btn btn-primary reveal">
+                    Deploy Capital with Confidence
+                    <i data-lucide="arrow-right" aria-hidden="true"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter" aria-labelledby="newsletter-title">
+            <div class="container">
+                <div class="newsletter-inner reveal">
+                    <h3 id="newsletter-title">Market Intelligence, Delivered</h3>
+                    <p>Receive curated insights on Nigerian investment law, regulatory updates, and cross-border deal structures.</p>
+                    <form class="newsletter-form" aria-label="Newsletter signup">
+                        <label for="newsletter-email" class="sr-only">Email address</label>
+                        <input type="email" id="newsletter-email" name="email" placeholder="Enter your email" required autocomplete="email">
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                    <p class="newsletter-disclaimer">No spam. Unsubscribe anytime. We respect your privacy.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="logo.png" alt="Ardent Fort Law" width="60" height="60">
+                    <p>Premium legal counsel for cross-border transactions, corporate structuring, and strategic advisory across Nigeria and emerging markets.</p>
+                </div>
+                <div class="footer-col">
+                    <h5>Navigation</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="practice-areas.html">Practice Areas</a></li>
+                        <li><a href="investment.html">Investment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Resources</h5>
+                    <ul>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col footer-newsletter">
+                    <h5>Stay Informed</h5>
+                    <p>Subscribe to our newsletter for legal insights and market updates.</p>
+                    <form class="footer-newsletter-form" aria-label="Footer newsletter signup">
+                        <label for="footer-email" class="sr-only">Email address</label>
+                        <input type="email" id="footer-email" name="email" placeholder="Your email" required autocomplete="email">
+                        <button type="submit">Join</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ardent Fort Law. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="faq.html">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/2348000000000" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <i data-lucide="message-circle" aria-hidden="true"></i>
+        <span class="whatsapp-tooltip">Chat with us</span>
+    </a>
+
+    <!-- Shared JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
