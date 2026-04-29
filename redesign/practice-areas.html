@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Areas — Ardent Fort Law</title>
+    <meta name="description" content="Explore Ardent Fort Law's practice areas — Fintech, Energy, Real Estate, Cross-Border Capital, and Data Protection & Privacy Compliance. Comprehensive transactional counsel across Nigeria and emerging markets.">
+    <link rel="canonical" href="https://www.ardentfortlaw.com/practice-areas.html">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Practice Areas — Ardent Fort Law">
+    <meta property="og:description" content="Explore Ardent Fort Law's practice areas — Fintech, Energy, Real Estate, Cross-Border Capital, and Data Protection & Privacy Compliance. Comprehensive transactional counsel across Nigeria and emerging markets.">
+    <meta property="og:url" content="https://www.ardentfortlaw.com/practice-areas.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.ardentfortlaw.com/logo.png">
+    <meta property="og:site_name" content="Ardent Fort Law">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Practice Areas — Ardent Fort Law">
+    <meta name="twitter:description" content="Explore Ardent Fort Law's practice areas — Fintech, Energy, Real Estate, Cross-Border Capital, and Data Protection & Privacy Compliance. Comprehensive transactional counsel across Nigeria and emerging markets.">
+
+    <!-- Favicon -->
+    <link rel="icon" href="logo.png" type="image/png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+
+    <!-- Page-specific styles -->
+    <style>
+        /* ── Practice Areas Grid ── */
+        .practice-overview {
+            padding: var(--section-padding) 0;
+        }
+
+        .practice-intro {
+            max-width: 780px;
+            margin-bottom: var(--space-12);
+        }
+
+        .practice-intro p {
+            font-size: 1.1rem;
+            line-height: 1.9;
+            color: var(--text-secondary);
+        }
+
+        .practice-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--space-6);
+        }
+
+        .practice-card {
+            padding: var(--space-8) var(--space-6);
+            background: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            text-decoration: none;
+            display: block;
+            transition: all var(--duration-base) var(--ease-out-quart);
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .practice-card:hover {
+            border-color: var(--border-light);
+            transform: translateY(-4px);
+            box-shadow: var(--gold-glow);
+        }
+
+        .practice-card .icon-box {
+            margin-bottom: var(--space-5);
+        }
+
+        .practice-card h3 {
+            font-size: 1.1rem;
+            color: var(--text-primary);
+            margin-bottom: var(--space-3);
+            font-family: var(--font-heading);
+        }
+
+        .practice-card p {
+            font-family: var(--font-ui);
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            line-height: 1.7;
+            margin-bottom: var(--space-4);
+        }
+
+        .practice-card .card-link {
+            font-family: var(--font-ui);
+            font-size: 0.82rem;
+            color: var(--gold-400);
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: gap var(--duration-fast);
+        }
+
+        .practice-card:hover .card-link {
+            gap: 10px;
+        }
+
+        .practice-card .card-link i {
+            width: 14px;
+            height: 14px;
+        }
+
+        /* ── Practice Detail Accordion ── */
+        .practice-details {
+            padding: var(--section-padding) 0;
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border-subtle);
+        }
+
+        .practice-item {
+            margin-bottom: var(--space-4);
+            border: 1px solid var(--border-subtle);
+            background: var(--bg-card);
+            transition: all var(--duration-base) var(--ease-out-quart);
+        }
+
+        .practice-item:hover {
+            border-color: var(--border-light);
+        }
+
+        .practice-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: var(--space-6) var(--space-8);
+            cursor: pointer;
+            transition: background var(--duration-fast);
+            gap: var(--space-4);
+        }
+
+        .practice-header:hover {
+            background: var(--bg-tertiary);
+        }
+
+        .practice-header-left {
+            display: flex;
+            align-items: center;
+            gap: var(--space-4);
+        }
+
+        .practice-header-left .icon-box {
+            width: 44px;
+            height: 44px;
+            flex-shrink: 0;
+        }
+
+        .practice-header-left .icon-box i {
+            width: 20px;
+            height: 20px;
+        }
+
+        .practice-header h3 {
+            font-family: var(--font-body);
+            font-size: clamp(1.05rem, 1.5vw, 1.25rem);
+            font-weight: 600;
+            color: var(--text-primary);
+            line-height: 1.5;
+        }
+
+        .practice-toggle {
+            width: 20px;
+            height: 20px;
+            color: var(--gold-400);
+            flex-shrink: 0;
+            transition: transform var(--duration-base) var(--ease-out-expo);
+        }
+
+        .practice-item.active .practice-toggle {
+            transform: rotate(45deg);
+        }
+
+        .practice-body {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height var(--duration-slow) var(--ease-out-expo),
+                        padding var(--duration-base);
+        }
+
+        .practice-item.active .practice-body {
+            max-height: 800px;
+            padding: 0 var(--space-8) var(--space-8);
+            border-top: 1px solid var(--border-subtle);
+        }
+
+        .practice-body-inner {
+            padding-top: var(--space-6);
+            padding-left: calc(44px + var(--space-4));
+        }
+
+        .practice-body p {
+            font-size: 1.05rem;
+            line-height: 1.9;
+            color: var(--text-secondary);
+            margin-bottom: var(--space-5);
+        }
+
+        .practice-body .clean-list {
+            margin-top: var(--space-4);
+            margin-bottom: var(--space-6);
+            max-width: 700px;
+        }
+
+        .practice-body .tagline {
+            font-family: var(--font-body);
+            font-style: italic;
+            font-size: 1.05rem;
+            color: var(--gold-300);
+            border-left: 3px solid var(--gold-400);
+            padding-left: var(--space-4);
+            margin-top: var(--space-4);
+        }
+
+        /* ── Trust Badge Section ── */
+        .trust-section {
+            padding: var(--section-padding) 0;
+            border-top: 1px solid var(--border-subtle);
+        }
+
+        .trust-inner {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-12);
+            align-items: center;
+        }
+
+        .trust-image-frame {
+            border: 2px solid var(--border-light);
+            padding: var(--space-4);
+            background: var(--bg-card);
+            box-shadow: var(--gold-glow);
+        }
+
+        .trust-image-frame img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .trust-content h3 {
+            font-size: clamp(1.3rem, 2vw, 1.6rem);
+            color: var(--gold-200);
+            margin-bottom: var(--space-5);
+        }
+
+        .trust-content p {
+            margin-bottom: var(--space-4);
+            line-height: 1.8;
+        }
+
+        .trust-badge-details {
+            margin-top: var(--space-6);
+            padding: var(--space-6);
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-subtle);
+        }
+
+        .trust-badge-details dl {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: var(--space-2) var(--space-6);
+        }
+
+        .trust-badge-details dt {
+            font-family: var(--font-ui);
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .trust-badge-details dd {
+            font-family: var(--font-ui);
+            font-size: 0.95rem;
+            color: var(--text-primary);
+        }
+
+        /* ── CTA Section ── */
+        .cta-section {
+            padding: var(--section-padding) 0;
+            text-align: center;
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border-subtle);
+        }
+
+        .cta-section h2 {
+            margin-bottom: var(--space-4);
+        }
+
+        .cta-section p {
+            max-width: 600px;
+            margin: 0 auto var(--space-8);
+        }
+
+        /* ── Responsive ── */
+        @media (max-width: 1024px) {
+            .practice-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .trust-inner {
+                grid-template-columns: 1fr;
+                gap: var(--space-8);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .practice-grid {
+                grid-template-columns: 1fr;
+            }
+            .practice-header {
+                padding: var(--space-5) var(--space-5);
+            }
+            .practice-item.active .practice-body {
+                padding: 0 var(--space-5) var(--space-5);
+            }
+            .practice-body-inner {
+                padding-left: 0;
+            }
+            .practice-header-left .icon-box {
+                display: none;
+            }
+        }
+    </style>
+
+    <!-- Schema: LegalService -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LegalService",
+        "name": "Ardent Fort Law",
+        "url": "https://ardentfortlaw.com/practice-areas",
+        "description": "Premium transactional law firm covering Fintech, Energy, Real Estate, Cross-Border Capital, and Data Protection practice areas.",
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Practice Areas",
+            "itemListElement": [
+                {
+                    "@type": "Service",
+                    "name": "Fintech & Financial Services",
+                    "description": "Licensing, regulatory structuring, and transactional counsel for fintech companies and financial services providers."
+                },
+                {
+                    "@type": "Service",
+                    "name": "Energy, Oil & Gas & Transition",
+                    "description": "Transaction execution for energy sponsors, oil and gas operators, and renewable energy developers."
+                },
+                {
+                    "@type": "Service",
+                    "name": "Real Estate & Infrastructure",
+                    "description": "Structuring acquisitions, development financing, and infrastructure project delivery."
+                },
+                {
+                    "@type": "Service",
+                    "name": "Cross-Border & Private Capital",
+                    "description": "Facilitating cross-border investments, fund structuring, and private capital deployment across jurisdictions."
+                },
+                {
+                    "@type": "Service",
+                    "name": "Data Protection & Privacy Compliance",
+                    "description": "Registered Data Protection Compliance Organisation providing compliance advisory, data protection impact assessments, and privacy compliance services under the Nigeria Data Protection Act 2023."
+                }
+            ]
+        }
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- ═══════════ NAVIGATION ═══════════ -->
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <div class="nav-inner">
+                <a href="index.html" class="nav-logo" aria-label="Ardent Fort Law — Home">
+                    <img src="logo.png" alt="Ardent Fort Law logo">
+                    <div class="nav-logo-text">
+                        <span class="nav-logo-name">Ardent Fort Law</span>
+                        <span class="nav-logo-sub">Legal Practitioners</span>
+                    </div>
+                </a>
+
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="practice-areas.html" class="active" aria-current="page">Practice Areas</a></li>
+                    <li><a href="investment.html">Investment</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html" class="nav-cta">Get Started</a></li>
+                </ul>
+
+                <div class="nav-right">
+                    <button class="theme-toggle" aria-label="Toggle light/dark theme">
+                        <i data-lucide="sun" class="icon-sun"></i>
+                        <i data-lucide="moon" class="icon-moon"></i>
+                    </button>
+                    <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ═══════════ MOBILE MENU ═══════════ -->
+    <div class="mobile-menu" id="mobile-menu" role="dialog" aria-hidden="true" aria-label="Mobile navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="practice-areas.html" aria-current="page">Practice Areas</a>
+        <a href="investment.html">Investment</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+    </div>
+
+    <!-- ═══════════ MAIN CONTENT ═══════════ -->
+    <main id="main-content">
+
+        <!-- ── Page Hero ── -->
+        <section class="page-hero" aria-label="Page header">
+            <div class="container">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span class="separator" aria-hidden="true">/</span>
+                    <span aria-current="page">Practice Areas</span>
+                </nav>
+                <div class="section-label" aria-hidden="true"><span>Our Expertise</span></div>
+                <h1>Practice <span class="gold-text">Areas</span></h1>
+            </div>
+        </section>
+
+        <!-- ═══ PRACTICE AREAS OVERVIEW ═══ -->
+        <section class="practice-overview" aria-labelledby="overview-heading">
+            <div class="container">
+                <div class="practice-intro reveal">
+                    <p>We concentrate our practice in sectors where regulatory complexity, cross-border structuring, and transactional precision determine outcomes. Each practice area reflects deep industry knowledge built through years of advising sponsors, investors, and operators on transactions that define markets.</p>
+                </div>
+
+                <div class="practice-grid">
+
+                    <a href="#area-fintech" class="practice-card" aria-label="Fintech and Financial Services practice area">
+                        <div class="icon-box sm" aria-hidden="true">
+                            <i data-lucide="smartphone"></i>
+                        </div>
+                        <h3>Fintech &amp; Financial Services</h3>
+                        <p>Licensing, fundraising, and regulatory navigation for payment companies, digital lenders, and financial technology platforms.</p>
+                        <span class="card-link">Learn more <i data-lucide="arrow-down" aria-hidden="true"></i></span>
+                    </a>
+
+                    <a href="#area-energy" class="practice-card" aria-label="Energy, Oil and Gas practice area">
+                        <div class="icon-box sm" aria-hidden="true">
+                            <i data-lucide="flame"></i>
+                        </div>
+                        <h3>Energy, Oil &amp; Gas &amp; Transition</h3>
+                        <p>Transaction execution for upstream operators, power developers, and sponsors driving the energy transition across Africa.</p>
+                        <span class="card-link">Learn more <i data-lucide="arrow-down" aria-hidden="true"></i></span>
+                    </a>
+
+                    <a href="#area-realestate" class="practice-card" aria-label="Real Estate and Infrastructure practice area">
+                        <div class="icon-box sm" aria-hidden="true">
+                            <i data-lucide="building-2"></i>
+                        </div>
+                        <h3>Real Estate &amp; Infrastructure</h3>
+                        <p>Structuring acquisitions, joint ventures, development financing, and infrastructure concessions across asset classes.</p>
+                        <span class="card-link">Learn more <i data-lucide="arrow-down" aria-hidden="true"></i></span>
+                    </a>
+
+                    <a href="#area-crossborder" class="practice-card" aria-label="Cross-Border and Private Capital practice area">
+                        <div class="icon-box sm" aria-hidden="true">
+                            <i data-lucide="globe"></i>
+                        </div>
+                        <h3>Cross-Border &amp; Private Capital</h3>
+                        <p>Facilitating capital deployment across jurisdictions for private equity funds, DFIs, family offices, and institutional investors.</p>
+                        <span class="card-link">Learn more <i data-lucide="arrow-down" aria-hidden="true"></i></span>
+                    </a>
+
+                    <a href="#area-dataprotection" class="practice-card" aria-label="Data Protection and Privacy Compliance practice area">
+                        <div class="icon-box sm" aria-hidden="true">
+                            <i data-lucide="shield-check"></i>
+                        </div>
+                        <h3>Data Protection &amp; Privacy Compliance</h3>
+                        <p>End-to-end data protection compliance, privacy advisory, and regulatory alignment under the Nigeria Data Protection Act, 2023.</p>
+                        <span class="card-link">Learn more <i data-lucide="arrow-down" aria-hidden="true"></i></span>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══ PRACTICE AREA DETAILS (Accordion) ═══ -->
+        <section class="practice-details" aria-labelledby="details-heading">
+            <div class="container">
+                <p class="section-label centered reveal">In Depth</p>
+                <h2 class="section-title reveal" id="details-heading" style="text-align:center;">What We <span class="gold-text">Cover</span></h2>
+
+                <!-- 1. Fintech & Financial Services -->
+                <div class="practice-item reveal" id="area-fintech" role="region">
+                    <div class="practice-header" role="button" tabindex="0" aria-expanded="false">
+                        <div class="practice-header-left">
+                            <div class="icon-box sm" aria-hidden="true">
+                                <i data-lucide="smartphone"></i>
+                            </div>
+                            <h3>Fintech &amp; Financial Services</h3>
+                        </div>
+                        <i data-lucide="plus" class="practice-toggle" aria-hidden="true"></i>
+                    </div>
+                    <div class="practice-body" role="region">
+                        <div class="practice-body-inner">
+                            <p>We advise fintech companies, digital lenders, payment service providers, and financial institutions on the full lifecycle of their regulatory and transactional needs. From securing CBN and SEC licences to structuring fundraising rounds and navigating cross-border expansion, our counsel is built around the practical realities of operating in a rapidly evolving regulatory environment.</p>
+                            <ul class="clean-list">
+                                <li>CBN licensing for payment service providers, microfinance banks, and mobile money operators</li>
+                                <li>SEC registration for digital asset exchanges and fund managers</li>
+                                <li>Seed, Series A through growth-stage fundraising and investor documentation</li>
+                                <li>Payment gateway and switching licence applications</li>
+                                <li>Agent banking and super-agent structuring</li>
+                                <li>Open banking and API partnership agreements</li>
+                                <li>Consumer lending and credit product compliance</li>
+                                <li>Cross-border remittance and foreign exchange structuring</li>
+                            </ul>
+                            <p class="tagline">Where regulation meets innovation, we build the bridge.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Energy, Oil & Gas & Transition -->
+                <div class="practice-item reveal" id="area-energy" role="region">
+                    <div class="practice-header" role="button" tabindex="0" aria-expanded="false">
+                        <div class="practice-header-left">
+                            <div class="icon-box sm" aria-hidden="true">
+                                <i data-lucide="flame"></i>
+                            </div>
+                            <h3>Energy, Oil &amp; Gas &amp; Transition</h3>
+                        </div>
+                        <i data-lucide="plus" class="practice-toggle" aria-hidden="true"></i>
+                    </div>
+                    <div class="practice-body" role="region">
+                        <div class="practice-body-inner">
+                            <p>Our energy practice spans upstream oil and gas, midstream infrastructure, power generation, and the emerging renewable energy and carbon credit markets. We advise sponsors, operators, and investors on transactions shaped by the Petroleum Industry Act, the Electric Power Sector Reform Act, and evolving transition frameworks across the continent.</p>
+                            <ul class="clean-list">
+                                <li>Upstream asset acquisitions, farm-in and farm-out transactions</li>
+                                <li>Petroleum Industry Act compliance and licence transitions</li>
+                                <li>Power purchase agreements and generation licence applications</li>
+                                <li>Gas supply, processing, and transportation agreements</li>
+                                <li>Renewable energy project development and IPP structuring</li>
+                                <li>Carbon credit and emissions trading advisory</li>
+                                <li>EPC and O&amp;M contract negotiation</li>
+                                <li>Host community development trust structuring</li>
+                            </ul>
+                            <p class="tagline">From wellhead to grid, we execute across the energy value chain.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Real Estate & Infrastructure -->
+                <div class="practice-item reveal" id="area-realestate" role="region">
+                    <div class="practice-header" role="button" tabindex="0" aria-expanded="false">
+                        <div class="practice-header-left">
+                            <div class="icon-box sm" aria-hidden="true">
+                                <i data-lucide="building-2"></i>
+                            </div>
+                            <h3>Real Estate &amp; Infrastructure</h3>
+                        </div>
+                        <i data-lucide="plus" class="practice-toggle" aria-hidden="true"></i>
+                    </div>
+                    <div class="practice-body" role="region">
+                        <div class="practice-body-inner">
+                            <p>We advise developers, investors, and institutions on real estate acquisitions, development financing, and infrastructure project delivery. Our practice covers commercial, residential, and mixed-use developments, as well as public-private partnerships and concession arrangements across transport, healthcare, and education infrastructure.</p>
+                            <ul class="clean-list">
+                                <li>Land acquisition, title perfection, and governor's consent processing</li>
+                                <li>Real estate fund structuring and investor syndication</li>
+                                <li>Construction and development finance documentation</li>
+                                <li>Joint venture and joint development agreements</li>
+                                <li>Public-private partnership and concession structuring</li>
+                                <li>Commercial lease negotiation and portfolio management</li>
+                                <li>Infrastructure project finance and lender documentation</li>
+                                <li>Environmental and social impact compliance</li>
+                            </ul>
+                            <p class="tagline">We build the legal foundations that capital builds upon.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Cross-Border & Private Capital -->
+                <div class="practice-item reveal" id="area-crossborder" role="region">
+                    <div class="practice-header" role="button" tabindex="0" aria-expanded="false">
+                        <div class="practice-header-left">
+                            <div class="icon-box sm" aria-hidden="true">
+                                <i data-lucide="globe"></i>
+                            </div>
+                            <h3>Cross-Border &amp; Private Capital</h3>
+                        </div>
+                        <i data-lucide="plus" class="practice-toggle" aria-hidden="true"></i>
+                    </div>
+                    <div class="practice-body" role="region">
+                        <div class="practice-body-inner">
+                            <p>We facilitate cross-border capital deployment for private equity funds, development finance institutions, family offices, and institutional investors entering or expanding within African markets. Our cross-border practice addresses the structural, regulatory, and tax considerations that determine whether capital reaches its intended destination efficiently.</p>
+                            <ul class="clean-list">
+                                <li>Private equity and venture capital fund structuring</li>
+                                <li>Cross-border M&amp;A and post-acquisition integration</li>
+                                <li>DFI investment documentation and co-investment structures</li>
+                                <li>Foreign direct investment approvals and repatriation frameworks</li>
+                                <li>Holding company and SPV structuring across jurisdictions</li>
+                                <li>Shareholder agreements and governance frameworks for multi-jurisdiction portfolios</li>
+                                <li>Double taxation treaty analysis and optimisation</li>
+                                <li>AfCFTA-related trade and investment structuring</li>
+                            </ul>
+                            <p class="tagline">We move capital where opportunity meets structure.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Data Protection & Privacy Compliance -->
+                <div class="practice-item reveal" id="area-dataprotection" role="region">
+                    <div class="practice-header" role="button" tabindex="0" aria-expanded="false">
+                        <div class="practice-header-left">
+                            <div class="icon-box sm" aria-hidden="true">
+                                <i data-lucide="shield-check"></i>
+                            </div>
+                            <h3>Data Protection &amp; Privacy Compliance</h3>
+                        </div>
+                        <i data-lucide="plus" class="practice-toggle" aria-hidden="true"></i>
+                    </div>
+                    <div class="practice-body" role="region">
+                        <div class="practice-body-inner">
+                            <p>Ardent Fort Law is a registered Data Protection Compliance Organisation under the Nigeria Data Protection Act, 2023. We provide end-to-end data protection compliance services for organisations processing personal data in Nigeria, combining legal expertise with practical implementation support to achieve and maintain compliance.</p>
+                            <ul class="clean-list">
+                                <li>Nigeria Data Protection Act 2023 compliance advisory</li>
+                                <li>Data Protection Impact Assessments (DPIAs)</li>
+                                <li>Data processing agreements and controller-processor documentation</li>
+                                <li>Cross-border data transfer mechanisms and adequacy assessments</li>
+                                <li>Data breach response planning and notification management</li>
+                                <li>Compliance oversight for organisations processing personal data</li>
+                                <li>Privacy policy drafting and consent management frameworks</li>
+                                <li>Data subject rights request procedures and response protocols</li>
+                                <li>Employee data protection training and awareness programmes</li>
+                            </ul>
+                            <p class="tagline">Compliance is not a checkbox. It is the infrastructure of trust.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ═══ DATA PROTECTION TRUST SIGNAL ═══ -->
+        <section class="trust-section" aria-labelledby="trust-heading">
+            <div class="container">
+                <div class="callout reveal-scale">
+                    <p><i data-lucide="shield-check" style="display:inline;width:20px;height:20px;vertical-align:middle;margin-right:8px;color:var(--gold-400)"></i> Ardent Fort Law is a registered Data Protection Compliance Organisation under the Nigeria Data Protection Act, 2023 — authorised to provide compliance services by the Nigeria Data Protection Commission.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══ CTA SECTION ═══ -->
+        <section class="cta-section" aria-labelledby="cta-heading">
+            <div class="container">
+                <p class="section-label centered reveal">Get Started</p>
+                <h2 class="section-title reveal" id="cta-heading">Discuss Your <span class="gold-text">Transaction</span></h2>
+                <p class="reveal">Tell us about your matter. We will assess the regulatory landscape and advise on the clearest path forward.</p>
+                <a href="contact.html" class="btn btn-primary reveal">
+                    Contact Us
+                    <i data-lucide="arrow-right"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- ═══ NEWSLETTER ═══ -->
+        <section class="newsletter" aria-labelledby="newsletter-heading">
+            <div class="container">
+                <div class="newsletter-inner reveal">
+                    <h3 id="newsletter-heading">Stay Informed</h3>
+                    <p>Regulatory updates, deal insights, and market intelligence delivered to your inbox.</p>
+                    <form class="newsletter-form" aria-label="Newsletter signup">
+                        <label for="newsletter-email" class="sr-only">Email address</label>
+                        <input type="email" id="newsletter-email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                    <p class="newsletter-disclaimer">No spam. Unsubscribe at any time.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ═══════════ FOOTER ═══════════ -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <img src="logo.png" alt="Ardent Fort Law logo">
+                    <p>Transaction execution counsel for complex cross-border deals. We structure, de-risk, and close.</p>
+                </div>
+
+                <!-- Navigation -->
+                <div class="footer-col">
+                    <h5>Navigation</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="investment.html">Investment</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Practice Areas -->
+                <div class="footer-col">
+                    <h5>Practice Areas</h5>
+                    <ul>
+                        <li><a href="practice-areas.html#area-fintech">Fintech &amp; Financial Services</a></li>
+                        <li><a href="practice-areas.html#area-energy">Energy, Oil &amp; Gas</a></li>
+                        <li><a href="practice-areas.html#area-realestate">Real Estate &amp; Infrastructure</a></li>
+                        <li><a href="practice-areas.html#area-crossborder">Cross-Border &amp; Private Capital</a></li>
+                        <li><a href="practice-areas.html#area-dataprotection">Data Protection &amp; Privacy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="footer-col footer-newsletter">
+                    <h5>Newsletter</h5>
+                    <p>Get regulatory updates and deal intelligence.</p>
+                    <form class="footer-newsletter-form" aria-label="Footer newsletter signup">
+                        <label for="footer-email" class="sr-only">Email address</label>
+                        <input type="email" id="footer-email" placeholder="Your email" required>
+                        <button type="submit">Join</button>
+                    </form>
+                </div>
+
+            </div>
+
+            <!-- NDPC Compliance Badge -->
+            <div class="ndpc-badge">
+                <a href="https://ndpc.gov.ng" target="_blank" rel="noopener noreferrer" class="ndpc-badge-link">
+                    <img src="assets/ndpc-logo-white.png" alt="Nigeria Data Protection Commission (NDPC)" width="120" height="48" loading="lazy">
+                </a>
+                <div class="ndpc-badge-info">
+                    <span class="ndpc-badge-title"><i data-lucide="shield-check" style="width:14px;height:14px;vertical-align:-2px;margin-right:4px"></i>NDPA 2023 Compliant</span>
+                    <span class="ndpc-badge-text">Your data is protected under the Nigeria Data Protection Act, 2023. <a href="privacy.html">Read our Privacy Policy</a></span>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ardent Fort Law. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ═══════════ WHATSAPP FLOAT ═══════════ -->
+    <a href="https://wa.me/2348000000000" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
+        <i data-lucide="message-circle" aria-hidden="true"></i>
+        <span class="whatsapp-tooltip">Chat with us</span>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Page-specific: smooth scroll to accordion and auto-expand -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Handle hash navigation — auto-expand the target accordion
+            function openAccordionFromHash() {
+                var hash = window.location.hash;
+                if (!hash) return;
+                var target = document.querySelector(hash);
+                if (target && target.classList.contains('practice-item')) {
+                    // Close any currently open items
+                    document.querySelectorAll('.practice-item.active').forEach(function(item) {
+                        item.classList.remove('active');
+                        var header = item.querySelector('.practice-header');
+                        if (header) header.setAttribute('aria-expanded', 'false');
+                    });
+                    // Open the target
+                    target.classList.add('active');
+                    var header = target.querySelector('.practice-header');
+                    if (header) header.setAttribute('aria-expanded', 'true');
+                    // Scroll into view with offset for navbar
+                    setTimeout(function() {
+                        var offset = 100;
+                        var top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+                        window.scrollTo({ top: top, behavior: 'smooth' });
+                    }, 300);
+                }
+            }
+
+            openAccordionFromHash();
+            window.addEventListener('hashchange', openAccordionFromHash);
+
+            // Smooth scroll for practice cards linking to accordion sections
+            document.querySelectorAll('.practice-card[href^="#"]').forEach(function(card) {
+                card.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    var targetId = this.getAttribute('href');
+                    history.pushState(null, null, targetId);
+                    openAccordionFromHash();
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
